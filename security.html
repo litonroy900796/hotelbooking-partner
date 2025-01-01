@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Setting | Hotel Booking</title>
+    <!-- flowbite design  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+        /* Custom Classes */
+        .border-primary,
+        .bg-primary {
+            background-color: #003B95;
+        }
+
+        .bg-secondary {
+            background: #FCDC18 !important;
+        }
+
+        .text-primary {
+            color: #003B95;
+        }
+    </style>
+</head>
+
+<body>
+
+   <!--============== header start ============ -->
+   <header class="">
+    <!--  primary header -->
+    <div class="bg-primary">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="w-[190px] py-2">
+            <a href="">
+              <img src="/assets/images/logo-white.png" alt="Logo" class="w-full">
+
+            </a>
+          </div>
+          <div class="flex items-center gap-4 ">
+            <!-- search -->
+            <div class="flex   items-center bg-white rounded-sm shadow-md px-3 py-1">
+              <div class="border-r pr-2 border-gray-400">
+                <i class="fa-solid fa-magnifying-glass text-[14px] text-gray-400 leading-[14px]"></i>
+              </div>
+              <div class="pl-2">
+                <input type="text" placeholder="Search page and reservations"
+                  class="border-0 outline-0 w-[210px] py-1 placeholder:leading-[14px] leading-[14px] placeholder:text-[14px]">
+              </div>
+            </div>
+            <!-- end search -->
+            <!-- start notification -->
+            <div class="relative cursor-pointer">
+              <i class="fa-regular fa-bell text-white text-[22px]"></i>
+              <div
+                class="absolute top-[-12px] right-[-10px] w-[20px] font-semibold flex items-center text-[12px] justify-center h-[20px] bg-red-500 text-white  rounded-[100px]">
+                10
+              </div>
+            </div>
+            <!-- end notification -->
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="">
+                <div id="profile" data-dropdown-toggle="profile_dropdown"
+                  class="w-[85%] group relative py-3 pl-4 border-l border-gray-400 cursor-pointer">
+                  <img src="/assets/images/profile.png" alt="user image">
+                </div>
+              </div>
+              <div tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <!-- Dropdown menu -->
+                <div id="" class="">
+                  <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="profile">
+                      <li><a href="/change-password.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Change
+                              Password</a>
+                      </li>
+                      <li><a href="/notification-setting.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Notification
+                              Settings </a>
+                      </li>
+                      <li><a href="/contacts.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Contacts</a>
+                      </li>
+                      <li><a href="/roll-manager.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Create
+                              and Manage user</a>
+                      </li>
+                      <li><a href="/security.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Security</a>
+                      </li>
+                      <li><a href="#"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Sign
+                              out</a>
+                      </li>
+                  </ul>
+              </div>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- secondary header -->
+    <div class="bg-white py-[2px] border-b">
+      <div class="container mx-auto">
+        <div class="">
+          <ul class="list-none flex items-center">
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <i class="bi bi-house text-[18px]"></i>
+                Home</a>
+            </li>
+
+            <li class="dropdown dropdown-center">
+              <div tabindex="0" role="button"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-1 hover:bg-gray-100 rounded-[4px]">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-calendar-week text-[18px]"></i>
+                  Pricing & Availability
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <li><a href="#"
+                    class="rounded-sm capitalize hover:bg-gray-100 active:!bg-gray-200 active:!text-black text-[15px] px-2 py-2">Availability Calendar
+                  </a></li>
+                <li><a href="#"
+                    class="rounded-sm active:!bg-gray-200 active:!text-black capitalize hover:bg-gray-100 text-[15px] px-2  py-2">Copy Annual Rates </a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Room Status (Open/Close)</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[15px] px-2 py-2">Rate Plans</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[15px] px-2 py-2">Additional Value Offers</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Guest-Based Pricing</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <i class="bi bi-tags-fill text-[17px]"></i>
+                Offers</a>
+            </li>
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                
+                <i class="bi bi-journal-bookmark-fill text-[17px]"></i>
+                Bookings
+              </a>
+            </li>
+          
+            <li class="dropdown dropdown-center">
+              <div tabindex="0" role="button"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-pencil text-[17px]"></i>
+                  Property Details
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <li><a href="#"
+                    class="rounded-sm capitalize hover:bg-gray-100 active:!bg-gray-200 active:!text-black text-[14px] px-2 py-2">
+                    Property Page Score </a></li>
+                <li><a href="#"
+                    class="rounded-sm active:!bg-gray-200 active:!text-black capitalize hover:bg-gray-100 text-[15px] px-2  py-2">General Information & Status</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">VAT, Taxes & Charges</a>
+                </li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[15px] px-2 py-2">Photo Gallery</a>
+                </li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Policies & Guidelines</a>
+                </li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Facilities & Services</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Room Details</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Room Amenities</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">View Descriptions</a></li>
+
+              </ul>
+            </li>
+
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <i class="bi bi-suit-heart text-[17px] "></i>
+                Guest Feedback
+              </a>
+            </li>
+            <li class="dropdown dropdown-center">
+              <div tabindex="0" role="button"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-card-checklist text-[17px]"></i>
+                  Finances
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <li><a href="#"
+                    class="rounded-sm capitalize hover:bg-gray-100 active:!bg-gray-200 active:!text-black text-[15px] px-2 py-2">
+                    Invoices </a></li>
+                <li><a href="#"
+                    class="rounded-sm active:!bg-gray-200 active:!text-black capitalize hover:bg-gray-100 text-[14px] px-2  py-2">Booking Statements</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[14px] px-2 py-2">Financial Summary</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[14px] px-2 py-2">Finance Settings</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!--============== header End ============ -->
+
+    <div class="page py-7">
+        <div class="container mx-auto ">
+            <div class="bg-white rounded-md  shadow border p-7">
+                <div class="flex gap-10">
+                    <div class="w-[25%]">
+                        <div class="">
+                            <ul class="flex flex-col gap-1">
+                                <li><a href="/change-password.html"
+                                        class="text-base flex items-center gap-3 capitalize px-4 py-[10px] rounded-md hover:bg-gray-100  transition-all"><i
+                                            class="fa-solid fa-lock"></i> Change Password</a></li>
+                                <li><a href="/notification-setting.html"
+                                        class="text-base flex items-center gap-3 capitalize px-4 py-[10px] rounded-md hover:bg-gray-100  transition-all"><i
+                                            class="fa-regular fa-bell"></i> Notification Settings </a></li>
+                                <li><a href="/contacts.html"
+                                        class="text-base flex items-center gap-3 capitalize px-4 py-[10px] rounded-md hover:bg-gray-100 transition-all"><i
+                                            class="fa-regular fa-address-book"></i> Contacts </a></li>
+                                <li><a href="/roll-manager.html"
+                                        class="text-base flex items-center gap-3 capitalize px-4 py-[10px] rounded-md hover:bg-gray-100 transition-all"><i
+                                            class="fa-solid fa-users-viewfinder"></i> Create and Manage user </a>
+
+                                </li>
+                                <li><a href="/security.html"
+                                        class="text-base flex items-center gap-3 capitalize px-4 py-[10px] rounded-md hover:bg-gray-100 bg-gray-100 transition-all"><i
+                                            class="fa-solid fa-shield-halved"></i> Security </a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-base flex items-center gap-3 capitalize px-4 py-[10px] rounded-md hover:bg-gray-100 transition-all"><i
+                                            class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="title">
+                            <h1 class="text-xl font-bold ">Security Settings</h1>
+                            <!-- <p class="text-sm">You can customize your preferences for receiving different types of notifications here</p> -->
+                        </div>
+                        <div class="pt-6">
+                            <div class="flex items-center pb-3 border-b justify-between">
+                                <div class="">
+                                    <span class="text-[17px] font-bold">Add Phone Number</span>
+                                    <p class="text-[15px]">Here you can manage the phone numbers connected with your
+                                        extranet account</p>
+                                </div>
+                                <div>
+                                    <button
+                                    onclick="my_modal_3.showModal()"
+                                        class="flex items-center gap-2 capitalize bg-primary px-3 py-[5px] text-white text-[15px] rounded-sm">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        Add your phone number
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="pt-3">
+                                <h4 class="pb-3 text-base font-semibold">Verified Number list</h4>
+
+                                <div>
+                                    <table class="table-auto w-full">
+                                        <thead>
+                                            <tr class="bg-gray-100 ">
+                                                <td class="text-left capitalize pl-3 py-[6px] text-[15px] w-[36.33%]">
+                                                    Your registration Phone Number</td>
+                                                <td class="py-[6px] text-[15px] text-center w-[30.33%] capitalize">
+                                                    Status</td>
+                                                <td class="py-[6px] pr-3 text-[15px] text-right w-[33.33%] capitalize">
+                                                    Action</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                                            <tr class="border-b border-dashed">
+                                                <td class="capitalize pl-3 py-[6px] text-[15px] w-[36.33%]">01785356436
+                                                </td>
+                                                <td class="py-[6px] text-[15px] text-center w-[30.33%] "><span
+                                                        class="bg-green-100 text-green-800 text-xs font-medium  px-2.5 py-0.5 rounded ">Approved</span>
+                                                </td>
+                                                <td class="py-[6px] pr-3 text-[15px] text-right w-[33.33%] ">
+                                                    <div class="flex items-center justify-end ">
+                                                        <div
+                                                            class="bg-red-100 group cursor-pointer hover:bg-red-200 rounded-full w-8 h-8 flex items-center justify-center">
+                                                            <i
+                                                                class="fa-solid fa-trash-can text-gray-600 group-hover:text-gray-700"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-b border-dashed">
+                                                <td class="capitalize pl-3 py-[6px] text-[15px] w-[36.33%]">01785356436
+                                                </td>
+                                                <td class="py-[6px] text-[15px] text-center w-[30.33%] "><span
+                                                        class="bg-green-100 text-green-800 text-xs font-medium  px-2.5 py-0.5 rounded ">Approved</span>
+                                                </td>
+                                                <td class="py-[6px] pr-3 text-[15px] text-right w-[33.33%] ">
+                                                    <div class="flex items-center justify-end ">
+                                                        <div
+                                                            class="bg-red-100 group cursor-pointer hover:bg-red-200 rounded-full w-8 h-8 flex items-center justify-center">
+                                                            <i
+                                                                class="fa-solid fa-trash-can text-gray-600 group-hover:text-gray-700"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add phone number modal start -->
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <div class="py-3">
+              <h3 class="text-[22px] font-bold text-center">Add your phone number</h3>
+              <p class="text-[15px] text-center pt-[6px] ">After submitting your mobile number, and OTP will be sent to your mobile.</p>
+             <form>
+                <div class="pt-5">
+                    <label for="phone" class="text-[15px] pb-2 block">Enter your phone Number</label>
+                    <input type="number" min="0" id="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary  focus:bg-white">
+                </div>
+                <div class="grid grid-cols-3 gap-3 pt-6">
+                    <div></div>
+                    <div></div>
+                   <button type="submit" class="bg-primary rounded-md w-full text-[15px] text-white py-[8px] font-semibold">Submit</button>
+                </div>
+             </form>    
+          </div>
+        </div>
+      </dialog>
+    <!-- add phone number modal end -->
+
+  <!-- footer -->
+  <footer class="bg-primary pt-14">
+    <div class="container mx-auto">
+      <!-- first part -->
+      <div class="flex justify-between">
+        <div class="flex gap-24">
+          <div class="w-[180px]">
+            <img src="/assets/images/logo-white.png" alt="logo" class="w-full">
+          </div>
+          <div>
+            <ul class="list-none flex flex-col gap-2 text-[15px] text-white">
+              <li><a href="/" class="hover:underline">About Us</a></li>
+              <li><a href="/" class="hover:underline">Privacy and Cookie Statements</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="/property/index.html"> <button
+              class="py-[6px] text-[15px] px-4 bg-[#FCDC18] hover:bg-white text-black transition-all rounded-sm ">Add
+              new property</button></a>
+        </div>
+      </div>
+      <!--second part  -->
+      <div class="flex pt-10 pb-3  items-center justify-between">
+        <div class="">
+          <span class="text-white text-[14.6px]">
+            &copy; copyright 2024 HotelBooking
+
+          </span>
+        </div>
+        <p class="text-[14.6px] text-white">
+          Developed by <a href="https://www.codewareltd.com" target="_blank"
+            class="text-[#FBAF41] hover:underline">Codeware LTD</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <script type="text/javascript" src="/assets/js/javascript.js"></script>
+</body>
+
+</html>

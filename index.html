@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking </title>
+  <!-- flowbite design  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+
+  <style>
+    /* Custom Classes */
+    .bg-primary {
+      background-color: #003B95;
+    }
+
+    .text-primary {
+      color: #003B95;
+    }
+  </style>
+</head>
+
+<body>
+  <!--============== header start ============ -->
+  <header class="">
+    <!--  primary header -->
+    <div class="bg-primary">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="w-[190px] py-2">
+            <a href="">
+              <img src="/assets/images/logo-white.png" alt="Logo" class="w-full">
+
+            </a>
+          </div>
+          <div class="flex items-center gap-4 ">
+            <!-- search -->
+            <div class="flex   items-center bg-white rounded-sm shadow-md px-3 py-1">
+              <div class="border-r pr-2 border-gray-400">
+                <i class="fa-solid fa-magnifying-glass text-[14px] text-gray-400 leading-[14px]"></i>
+              </div>
+              <div class="pl-2">
+                <input type="text" placeholder="Search page and reservations"
+                  class="border-0 outline-0 w-[210px] py-1 placeholder:leading-[14px] leading-[14px] placeholder:text-[14px]">
+              </div>
+            </div>
+            <!-- end search -->
+            <!-- start notification -->
+            <div class="relative cursor-pointer">
+              <i class="fa-regular fa-bell text-white text-[22px]"></i>
+              <div
+                class="absolute top-[-12px] right-[-10px] w-[20px] font-semibold flex items-center text-[12px] justify-center h-[20px] bg-red-500 text-white  rounded-[100px]">
+                10
+              </div>
+            </div>
+            <!-- end notification -->
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="">
+                <div id="profile" data-dropdown-toggle="profile_dropdown"
+                  class="w-[85%] group relative py-3 pl-4 border-l border-gray-400 cursor-pointer">
+                  <img src="/assets/images/profile.png" alt="user image">
+                </div>
+              </div>
+              <div tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <!-- Dropdown menu -->
+                <div id="" class="">
+                  <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="profile">
+                      <li><a href="/change-password.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Change
+                              Password</a>
+                      </li>
+                      <li><a href="/notification-setting.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Notification
+                              Settings </a>
+                      </li>
+                      <li><a href="/contacts.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Contacts</a>
+                      </li>
+                      <li><a href="/roll-manager.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Create
+                              and Manage user</a>
+                      </li>
+                      <li><a href="/security.html"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Security</a>
+                      </li>
+                      <li><a href="#"
+                              class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Sign
+                              out</a>
+                      </li>
+                  </ul>
+              </div>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- secondary header -->
+    <div class="bg-white py-[2px] border-b">
+      <div class="container mx-auto">
+        <div class="">
+          <ul class="list-none flex items-center">
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <i class="bi bi-house text-[18px]"></i>
+                Home</a>
+            </li>
+
+            <li class="dropdown dropdown-center">
+              <div tabindex="0" role="button"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-1 hover:bg-gray-100 rounded-[4px]">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-calendar-week text-[18px]"></i>
+                  Pricing & Availability
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <li><a href="#"
+                    class="rounded-sm capitalize hover:bg-gray-100 active:!bg-gray-200 active:!text-black text-[15px] px-2 py-2">Availability Calendar
+                  </a></li>
+                <li><a href="#"
+                    class="rounded-sm active:!bg-gray-200 active:!text-black capitalize hover:bg-gray-100 text-[15px] px-2  py-2">Copy Annual Rates </a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Room Status (Open/Close)</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[15px] px-2 py-2">Rate Plans</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[15px] px-2 py-2">Additional Value Offers</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Guest-Based Pricing</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <i class="bi bi-tags-fill text-[17px]"></i>
+                Offers</a>
+            </li>
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                
+                <i class="bi bi-journal-bookmark-fill text-[17px]"></i>
+                Bookings
+              </a>
+            </li>
+          
+            <li class="dropdown dropdown-center">
+              <div tabindex="0" role="button"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-pencil text-[17px]"></i>
+                  Property Details
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <li><a href="#"
+                    class="rounded-sm capitalize hover:bg-gray-100 active:!bg-gray-200 active:!text-black text-[14px] px-2 py-2">
+                    Property Page Score </a></li>
+                <li><a href="#"
+                    class="rounded-sm active:!bg-gray-200 active:!text-black capitalize hover:bg-gray-100 text-[15px] px-2  py-2">General Information & Status</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">VAT, Taxes & Charges</a>
+                </li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[15px] px-2 py-2">Photo Gallery</a>
+                </li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Policies & Guidelines</a>
+                </li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Facilities & Services</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Room Details</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">Room Amenities</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200  active:!text-black hover:bg-gray-100 text-[15px] px-2 py-2">View Descriptions</a></li>
+
+              </ul>
+            </li>
+
+            <li>
+              <a href="#"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <i class="bi bi-suit-heart text-[17px] "></i>
+                Guest Feedback
+              </a>
+            </li>
+            <li class="dropdown dropdown-center">
+              <div tabindex="0" role="button"
+                class="px-5 py-2  text-[15px] cursor-pointer flex items-center gap-2 hover:bg-gray-100 rounded-[4px]">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-card-checklist text-[17px]"></i>
+                  Finances
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul tabindex="0"
+                class="dropdown-content menu bg-base-100  z-[1] w-52 p-2 dropdown-shadow border-gray-300 rounded-sm">
+                <li><a href="#"
+                    class="rounded-sm capitalize hover:bg-gray-100 active:!bg-gray-200 active:!text-black text-[15px] px-2 py-2">
+                    Invoices </a></li>
+                <li><a href="#"
+                    class="rounded-sm active:!bg-gray-200 active:!text-black capitalize hover:bg-gray-100 text-[14px] px-2  py-2">Booking Statements</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black hover:bg-gray-100 text-[14px] px-2 py-2">Financial Summary</a></li>
+                <li><a href="#"
+                    class="rounded-sm capitalize active:!bg-gray-200 active:!text-black  hover:bg-gray-100 text-[14px] px-2 py-2">Finance Settings</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!--============== header End ============ -->
+  <!-- main section -->
+  <div class="py-7 page">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between">
+        <h1 class="lg:text-[21px] md:text-xl text-[19px] font-bold">Hotel Victory - Best in City Center</h1>
+        <a href="/property/index.html">
+               <button class="bg-primary border border-primary hover:bg-white  px-4 py-[7px] rounded-[4px] text-white hover:text-primary text-[15px] ">Add Another New Property</button> 
+             </a>
+      </div>
+      <div class="mt-6">
+        <div class="bg-white py-4 rounded-sm shadow">
+          <div class="border-b border-gray-100 pb-3 flex items-center justify-between px-4">
+            <div class="flex items-center gap-6">
+              <span class="text-[17px] font-bold leading-3">Reservations</span>
+              <select class="select select-bordered select-sm !rounded-sm">
+                <option disabled selected>Today</option>
+                <option>To Week</option>
+                <option>To Month</option>
+                <option>To Year</option>
+              </select>
+
+            </div>
+            <a href="#">
+              <button
+                class="border-[#003B95] border px-3 py-1 text-[14.5px] rounded-sm hover:bg-[#003B95] hover:text-white">See
+                All Reservations</button>
+            </a>
+          </div>
+          <div class="mt-1 px-3">
+            <div class="tabs-container">
+              <div class="tabs pt-1">
+                <div class="tab-links ">
+                  <button class="tab-link flex items-center px-3 active" data-tab="tab-1"> Check-In</button>
+                  <button class="tab-link text-base px-5 capitalize" data-tab="tab-2"> Check-Out </button>
+                  <button class="tab-link text-base px-5 capitalize" data-tab="tab-3"> Booking</button>
+                  <button class="tab-link text-base px-5 capitalize" data-tab="tab-4"> Stay-overs</button>
+                  <button class="tab-link text-base px-5 capitalize" data-tab="tab-5"> Guest Request</button>
+                </div>
+
+                <div class="tab-content active" id="tab-1">
+                  <table class="w-full">
+                    <tbody>
+                      <tr class="border-b border-dashed border-gray-300">
+                        <td class="w-[20%] text-left py-2">
+                          <span class="flex items-center gap-1">
+                            <div class="flag-icon w-[30px]">
+                              <svg class="w-[100%]" xmlns="http://www.w3.org/2000/svg" width="64" height="30"
+                                viewBox="0 0 3 2">
+                                <rect width="3" height="2" fill="#006a4e" />
+                                <circle cx="1" cy="1" r="0.5" fill="#f42a41" />
+                              </svg>
+                            </div>
+
+                            Md Rohim Islam
+                          </span>
+                          <span class="text-[15px] text-primary">4573463274</span>
+                        </td>
+                        <td class="w-[20%] text-center py-2">
+                          <span class="block text-base">Premier Single Room</span>
+                        </td>
+                        <td class="w-[20%] text-center py-2">
+                          <span class="block text-base">25 Dec 2024 - 28 Dec 2024</span>
+                          <span>Arrival Time 6:00 - 4:00</span>
+                        </td>
+                        <td class="w-[20%] text-center py-2">
+                          <span class="block text-base">4 Night - 2 Guest</span>
+                        </td>
+                        <td class="w-[20%] text-right py-2">
+                          <strong class="block text-[17px]">USD $200</strong>
+                          <span class="text-base">25 Dec 2024</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w-[20%] text-left py-2">
+                          <span class="flex items-center gap-1">
+                            <div class="flag-icon w-[30px]">
+                              <svg class="w-[100%]" xmlns="http://www.w3.org/2000/svg" width="64" height="30"
+                                viewBox="0 0 3 2">
+                                <rect width="3" height="2" fill="#006a4e" />
+                                <circle cx="1" cy="1" r="0.5" fill="#f42a41" />
+                              </svg>
+                            </div>
+
+                            Md Rohim Islam
+                          </span>
+                          <span class="text-[15px] text-primary">4573463274</span>
+                        </td>
+                        <td class="w-[20%] text-center py-2">
+                          <span class="block text-base">Premier Single Room</span>
+                        </td>
+                        <td class="w-[20%] text-center py-2">
+                          <span class="block text-base">25 Dec 2024 - 28 Dec 2024</span>
+                          <span>Arrival Time 6:00 - 4:00</span>
+                        </td>
+                        <td class="w-[20%] text-center py-2">
+                          <span class="block text-base">4 Night - 2 Guest</span>
+                        </td>
+                        <td class="w-[20%] text-right py-2">
+                          <strong class="block text-[17px]">USD $200</strong>
+                          <span class="text-base">25 Dec 2024</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-content" id="tab-2">
+
+                </div>
+
+                <div class="tab-content" id="tab-3">
+
+                </div>
+
+                <div class="tab-content" id="tab-4">
+
+                </div>
+                <div class="tab-content" id="tab-5">
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container mx-auto">
+      <div class="mt-6">
+        <div class="bg-white py-4 rounded-sm shadow">
+          <div class="border-b border-gray-100 pb-3 flex items-center justify-between px-4">
+            <div class="flex items-center">
+              <span class="text-[17px] font-bold leading-3 capitalize">recent reviews</span>
+            </div>
+            <a href="#">
+              <button
+                class="border-[#003B95] border px-3 py-1 text-[14.5px] rounded-sm hover:bg-[#003B95] hover:text-white capitalize">See
+                recent reviews</button>
+            </a>
+          </div>
+          <div class="grid grid-cols-4 gap-3 px-4 mt-4">
+              <div class="border p-3 border-l-blue-500 border-l-[3px] rounded-md border-gray-200 shadow-sm">
+                 <div class="flex items-center gap-2">
+                    <div>
+                       <img src="/assets/images/profile.png" alt="profile" class="w-[45px] h-[45px]">
+                    </div>
+                    <div class="flex  flex-col">
+                        <span class="text-[15.5px] font-semibold">Jane Smith</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>  
+                 </div> 
+                 <p class="text-[14.5px] pt-1 leading-5 line-clamp-2">Fantastic! This made my life so much easier. Will definitely use again.</p>   
+              </div>
+              <div class="border p-3 rounded-md border-gray-200 border-l-red-500 border-l-[3px] shadow-sm">
+                 <div class="flex items-center gap-2">
+                    <div>
+                       <img src="/assets/images/profile.png" alt="profile" class="w-[45px] h-[45px]">
+                    </div>
+                    <div class="flex  flex-col">
+                        <span class="text-[15.5px] font-semibold">Alex Johnson</span>
+                        <span>⭐⭐⭐</span>
+                    </div>  
+                 </div> 
+                 <p class="text-[14.5px] pt-1 leading-5 line-clamp-2">Highly recommend! The product quality is top-notch, and delivery was quick.</p>   
+              </div>
+              <div class="border p-3 rounded-md border-gray-200 border-l-purple-500 border-l-[3px] shadow-sm">
+                 <div class="flex items-center gap-2">
+                    <div>
+                       <img src="/assets/images/profile.png" alt="profile" class="w-[45px] h-[45px]">
+                    </div>
+                    <div class="flex  flex-col">
+                        <span class="text-[15.5px] font-semibold">Chris Taylor</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>  
+                 </div> 
+                 <p class="text-[14.5px] pt-1 leading-5 line-clamp-2">I loved the experience. The team was professional and attentive to every detail.</p>   
+              </div>
+              <div class="border p-3 rounded-md border-gray-200 border-l-yellow-500 border-l-[3px] shadow-sm">
+                 <div class="flex items-center gap-2">
+                    <div>
+                       <img src="/assets/images/profile.png" alt="profile" class="w-[45px] h-[45px]">
+                    </div>
+                    <div class="flex  flex-col">
+                        <span class="text-[15.5px] font-semibold">Sam Lee</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>  
+                 </div> 
+                 <p class="text-[14.5px] pt-1 leading-5 line-clamp-2">Amazing service! Everything was seamless and exceeded my expectations</p>   
+              </div>
+          </div>
+        </div> 
+        <div>
+          
+        </div>
+     </div>
+  </div>
+  </div>
+  <!-- main section -->
+
+  <!-- footer -->
+  <footer class="bg-primary pt-14">
+    <div class="container mx-auto">
+      <!-- first part -->
+      <div class="flex justify-between">
+        <div class="flex gap-24">
+          <div class="w-[180px]">
+            <img src="/assets/images/logo-white.png" alt="logo" class="w-full">
+          </div>
+          <div>
+            <ul class="list-none flex flex-col gap-2 text-[15px] text-white">
+              <li><a href="/" class="hover:underline">About Us</a></li>
+              <li><a href="/" class="hover:underline">Privacy and Cookie Statements</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="/property/index.html"> <button
+              class="py-[6px] text-[15px] px-4 bg-[#FCDC18] hover:bg-white text-black transition-all rounded-sm ">Add
+              new property</button></a>
+        </div>
+      </div>
+      <!--second part  -->
+      <div class="flex pt-10 pb-3  items-center justify-between">
+        <div class="">
+          <span class="text-white text-[14.6px]">
+            &copy; copyright 2024 HotelBooking
+
+          </span>
+        </div>
+        <p class="text-[14.6px] text-white">
+          Developed by <a href="https://www.codewareltd.com" target="_blank"
+            class="text-[#FBAF41] hover:underline">Codeware LTD</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/assets/js/javascript.js"></script>
+</body>
+
+</html>

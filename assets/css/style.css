@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primary: #003B95;
+  --secondary: #9333EA;
+  --font-size: 16px;
+  --padding: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; */
+  font-family: "Jost", serif;
+  font-optical-sizing: auto;
+
+}
+.container{
+  margin: 0 auto;
+}
+
+/* component */
+@layer components {
+  .btn-property {
+    @apply w-full py-2 text-[15px] border hover:bg-white hover:text-primary rounded-[4px] bg-primary border-primary text-white;
+  }
+}
+
+.dropdown-shadow{
+    box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
+}
+
+.page{
+    background-color: rgb(240 241 247);
+}
+
+.tabs-container {
+    width: 100%;
+
+    background-color: white;
+  
+    overflow: hidden;
+    position: relative;
+  }
+  
+  
+  .tab-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab-link {
+    background: none;
+    border: none;
+    font-size: 16px;
+ 
+    color: #444444;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .tab-link.active,
+  .tab-link:hover {
+    color: #003B95; /* Gradient purple */
+  }
+  
+  .tab-link i {
+    margin-right: 10px;
+  }
+  
+  .tab-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -11px;
+    left: 50%;
+    background: #003B95;
+    transition: all 0.4s ease;
+  }
+  
+  .tab-link.active::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .tab-content {
+    display: none;
+    animation: fadeInUp 0.5s ease;
+    padding: 5px 10px 15px 10px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Buttons */
+  .cta-btn {
+    display: inline-block;
+    padding: 12px 25px; /* More padding */
+    background: linear-gradient(45deg, #b84de5, #7d41ff); /* Purple gradient */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  
+  .cta-btn:hover {
+    background: linear-gradient(45deg, #9c3bce, #6b3ee8); /* Darker gradient on hover */
+  }
+  
+
+  /* custom radio box */
+  input[type="radio"]:checked + span {
+    display: block;
+  }
+
+  
