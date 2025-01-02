@@ -7,9 +7,6 @@
   --font-size: 16px;
   --padding: 10px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -20,19 +17,21 @@ html{
 }
 body{
     /* font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; */
-  font-family: "Jost", serif;
+    font-family: "Jost", serif;
   font-optical-sizing: auto;
+  font-weight: unset;
+  font-style: normal;
 
 }
 .container{
   margin: 0 auto;
 }
 
-/* component */
-@layer components {
-  .btn-property {
-    @apply w-full py-2 text-[15px] border hover:bg-white hover:text-primary rounded-[4px] bg-primary border-primary text-white;
-  }
+input[type="number"] {
+  -webkit-appearance: none; 
+  -moz-appearance: textfield; 
+  appearance: none;
+
 }
 
 .dropdown-shadow{

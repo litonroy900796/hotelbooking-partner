@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Details | hotel booking </title>
+    <title>Room Photos | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
@@ -271,171 +271,23 @@
         <div class="container">
             <div class="flex justify-between">
                 <div>
-                    <h1 class="text-2xl font-bold pb-2">Room details</h1>
-                    <p class="text-[17px]">Choose from a variety of bed sizes to ensure a restful sleep experience.</p>
+                    <h1 class="text-2xl font-bold pb-2">Photos</h1>
+                    <p class="text-[17px]">A glimpse into our hotel through these beautiful photos</p>
                 </div>
                 <div class="breadcrumbs text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>House rules</li>
+                        <li>Photos</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
                     <div class="w-[60%] ">
-                        <form action="/property/hotel/bathroom-details.html">
+                        <form action="/property/hotel/overview-room.html">
                             <div class="bg-white p-5 rounded-[4px]">
-                                <div class="relative flex mb-4 flex-col gap-3">
-                                    <label class="text-gray-700 font-medium text-[17px] block" for="room_type">What type
-                                        of unit is this</label>
-                                    <select id="room_type"
-                                        class="select select-bordered w-full rounded-md focus:outline-none focus:border-primary">
-                                        <option disabled selected>Select your unit type?</option>
-                                        <option>Han Solo</option>
-                                        <option>Greedo</option>
-                                    </select>
-                                </div>
-                                <div class="pb-8 border-b-2 ">
-                                    <label class="text-gray-700 font-medium text-[17px] block mb-2" for="same_type">How
-                                        many rooms of this type do you have?</label>
-                                    <input type="number" id="same_type" placeholder="Type the Number"
-                                        class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary placeholder:text-gray-700 placeholder:text-[14.5px]" />
-                                </div>
-                                <div class="py-5 border-b-2">
-                                    <span class="text-[16px] font-bold">What beds are available in this room?</span>
-                                    <div class="flex flex-col mt-4 gap-4">
-                                        <div
-                                            class="flex border py-1 px-3  border-dashed rounded-[4px] items-center justify-between">
-                                            <div class="flex items-center gap-3">
-                                                <div class="w-[64px]">
-                                                    <img src="/assets/images/single-bed.png" class="w-full"
-                                                        alt="single-bed">
-                                                </div>
-                                                <div class="">
-                                                    <h4 class="text-[16.5px] font-semibold">Twin bed(s)</h4>
-                                                    <p class="text-[15px]">35-51 inches wide</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center">
 
-                                                <button
-                                                    class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                        class="bi bi-dash-lg text-[18px] leading-3"></i></button>
-                                                <span class="px-4 text-[17px] ">0</span>
-                                                <button
-                                                    class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                        class="bi bi-plus-lg text-[18px] leading-3"></i></button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex border py-[6px] px-3  border-dashed rounded-[4px] items-center justify-between">
-                                            <div class="flex items-center gap-3">
-                                                <div class="w-[60px]">
-                                                    <img src="/assets/images/bed.png" class="w-full" alt="single-bed">
-                                                </div>
-                                                <div class="">
-                                                    <h4 class="text-[16.5px] font-semibold">Full bed(s)</h4>
-                                                    <p class="text-[15px]">52-59 inches wide</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center">
-
-                                                <button
-                                                    class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                        class="bi bi-dash-lg text-[18px] leading-3"></i></button>
-                                                <span class="px-4 text-[17px] ">0</span>
-                                                <button
-                                                    class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                        class="bi bi-plus-lg text-[18px] leading-3"></i></button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex border py-[6px] px-3  border-dashed rounded-[4px] items-center justify-between">
-                                            <div class="flex items-center gap-3">
-                                                <div class="w-[60px]">
-                                                    <img src="/assets/images/bed.png" class="w-full" alt="single-bed">
-                                                </div>
-                                                <div class="">
-                                                    <h4 class="text-[16.5px] font-semibold">Queen bed(s)</h4>
-                                                    <p class="text-[15px]">60-70 inches wide</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center">
-
-                                                <button
-                                                    class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                        class="bi bi-dash-lg text-[18px] leading-3"></i></button>
-                                                <span class="px-4 text-[17px] ">0</span>
-                                                <button
-                                                    class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                        class="bi bi-plus-lg text-[18px] leading-3"></i></button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="relative py-5 flex items-center justify-between border-b-2">
-                                    <span class="text-[16px] font-bold block">How many guests can stay in this room?</span>
-                                    <div class="flex items-center pr-4">
-
-                                        <button
-                                            class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                class="bi bi-dash-lg text-[18px] leading-3"></i></button>
-                                        <span class="px-4 text-[17px] ">0</span>
-                                        <button
-                                            class="w-[32px] h-[32px] flex items-center justify-center border rounded-full hover:bg-primary hover:text-white hover:border-primary"><i
-                                                class="bi bi-plus-lg text-[18px] leading-3"></i></button>
-                                    </div>
-                                </div>
-                                <div class="pt-5 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        How big is this room?
-                                    </label>
-                                    <div class="flex justify-center">
-                                        <div class="w-full">
-                                            <div class="flex">
-                                                <label
-                                                    class="input h-auto py-[3px] input-bordered w-full leading-[38px] rounded-l-md rounded-r-none">
-                                                    Size
-                                                    <input type="text" class="grow">
-                                                </label>
-                                                <select
-                                                    class="w-1/3 h-auto py-[4px] select select-bordered  rounded-r-md rounded-l-none"
-                                                    id="inputGroupSelect02">
-                                                    <option selected>feet</option>
-                                                    <option value="1">inch</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                  
-                                   <div class="pt-5 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        Is smoking allowed in this room?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="perking_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Yes</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="perking_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">
-                                                    No</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
