@@ -44,9 +44,7 @@ input[type="number"] {
 
 .tabs-container {
     width: 100%;
-
     background-color: white;
-  
     overflow: hidden;
     position: relative;
   }
@@ -140,4 +138,3 @@ input[type="number"] {
     display: block;
   }
 
-  

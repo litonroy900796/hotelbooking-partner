@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Hotel | hotel booking </title>
+    <title>Hotel invoice | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
@@ -267,29 +267,59 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
-           
             <div class="flex justify-between">
                 <div class="w-9/12">
-                    <h1 class="text-2xl font-bold pb-2">Bathroom Details</h1>
-                    <p class="text-[17px]">Explore the features and amenities available in the bathroom to ensure your comfort and convenience.</p>
+                    <h1 class="text-2xl font-bold pb-2">Invoicing</h1>
+                    <p class="text-[17px]">Enter the details in the fields below, and they will be seamlessly displayed on your invoice.</p>
                 </div>
                 <div class="breadcrumbs flex-1 flex justify-end text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>About Bathroom</li>
+                        <li>Invoice</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
                     <div class="w-[50%] ">
-                        <form action="/property/hotel/about-room.html">
+                        <form action="/property/hotel/overview-room.html">
                             <div class="bg-white p-5 rounded-[4px]">
 
                                 <div class="mb-4 relative">
-                                    <label for="rating " class="text-gray-700 font-medium mb-2 text-[17px] block">What
-                                        Is the bathroom private?</label>
+                                    <label for="rating " class="text-gray-700 font-medium mb-2 text-[17px] block">What name should be on the invoice?</label>
+                                    <div class="flex flex-col">
+                                        <div class="form-control flex-row">
+                                            <label class="label cursor-pointer flex items-center gap-2">
+                                                <input type="radio" name="is_private" class="radio radio-sm  radio-primary"
+                                                     />
+                                                <span class="label-text text-base">Liton Roy</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control flex-row">
+                                            <label class="label cursor-pointer flex items-center gap-2">
+                                                <input type="radio" name="is_private" class="radio radio-sm  radio-primary"
+                                                     />
+                                                <span class="label-text text-base">Liton Invoice</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control flex-row">
+                                            <label class="label cursor-pointer flex items-center gap-2">
+                                                <input type="radio" name="is_private" class="radio radio-sm  radio-primary"
+                                                     />
+                                                <span class="label-text text-base">Liton96 Invoice</span>
+                                            </label>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+                                <div class="mb-4">
+                                    <label for="company_name" class="text-gray-700 font-medium mb-2 text-[17px] block">Legal company name (please specify)</label>
+                                    <input type="text" name="company_name" id="company_name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary placeholder:text-gray-700 placeholder:text-[14.5px]" placeholder="Enter company name">
+                                </div>    
+                                <div class="mb-4 relative">
+                                    <label for="rating " class="text-gray-700 font-medium mb-2 text-[17px] block">Does this recipient have the same address as your property?</label>
                                     <div class="flex flex-col">
                                         <div class="form-control flex-row">
                                             <label class="label cursor-pointer flex items-center gap-2">
@@ -302,57 +332,45 @@
                                             <label class="label cursor-pointer flex items-center gap-2">
                                                 <input type="radio" name="is_private" class="radio radio-sm  radio-primary"
                                                      />
-                                                <span class="label-text text-base">No, it's shared</span>
+                                                <span class="label-text text-base">No</span>
                                             </label>
-                                        </div>
-                                    
-                                    </div>
 
-                                </div>
-                                <div class="mb-4 relative">
-                                    <label for="amenities"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">Which bathroom items are available in this room?
-                                    </label>
-                                    <div class="form-control">
-                                        <label class="label cursor-pointer justify-start gap-3 py-1">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
-                                            <span class="label-text text-base">Restaurant</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">Room service</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">Bar</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">24-hour front desk</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">Spa and wellness centre</span>
-                                        </label>
                                     </div>
 
                                 </div>
 
+                                </div>
+                                <span class="text-[17px] block pb-5 font-semibold">
+                                    Please provide the invoice recipient's address:
+                                </span>
+                                <!-- select -->
+                                <div class="mb-4">
+                                    <label for="country" class="text-gray-700 font-medium mb-2 text-[17px] block">Country/region</label>
+                                    <select name="country" id="country" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary placeholder:text-gray-700 placeholder:text-[14.5px]">
+                                        <option value="">Select country</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="India">India</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Nepal">Nepal</option>
+                                    </select>
+                                </div>
+                                <!-- city -->
+                                <div class="mb-4">
+                                    <label for="city" class="text-gray-700 font-medium mb-2 text-[17px] block">City</label>
+                                    <input type="text" name="city" id="city" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary placeholder:text-gray-700 placeholder:text-[14.5px]" placeholder="Enter city">
+                                </div>
+                                <!--Address line 1  -->
+                                <div class="mb-4">
+                                    <label for="address" class="text-gray-700 font-medium mb-2 text-[17px] block">Address line 1</label>
+                                    <input type="text" name="address" id="address" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary placeholder:text-gray-700 placeholder:text-[14.5px]" placeholder="Enter address">
+                                </div>
+                                <!--Post Code  -->
+                                <div class="mb-4">
+                                    <label for="post_code" class="text-gray-700 font-medium mb-2 text-[17px] block">Post Code</label>
+                                    <input type="text" name="post_code" id="post_code" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary placeholder:text-gray-700 placeholder:text-[14.5px]" placeholder="Enter post code">
+                                </div>    
 
-                            </div>
+                            </div>    
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
                                     class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Hotel | hotel booking </title>
+    <title>Hotel Photo | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
@@ -27,9 +27,6 @@
         .border-primary,
         .bg-primary {
             background-color: #003B95;
-        }
-        .border-primary {
-            border-color: #003B95;
         }
 
         .text-primary {
@@ -270,88 +267,79 @@
            
             <div class="flex justify-between">
                 <div class="w-9/12">
-                    <h1 class="text-2xl font-bold pb-2">Bathroom Details</h1>
-                    <p class="text-[17px]">Explore the features and amenities available in the bathroom to ensure your comfort and convenience.</p>
+                    <h1 class="text-2xl font-bold pb-2">What does your hotel look like?</h1>
+                    <p class="text-[17px]">Discover our hotel’s unique charm with elegant rooms, modern amenities, and breathtaking views, designed to make your stay unforgettable</p>
                 </div>
                 <div class="breadcrumbs flex-1 flex justify-end text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>About Bathroom</li>
+                        <li>Hotel Photos</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
                     <div class="w-[50%] ">
-                        <form action="/property/hotel/about-room.html">
+                        <form action="/property/hotel/overview-room.html">
                             <div class="bg-white p-5 rounded-[4px]">
-
-                                <div class="mb-4 relative">
-                                    <label for="rating " class="text-gray-700 font-medium mb-2 text-[17px] block">What
-                                        Is the bathroom private?</label>
-                                    <div class="flex flex-col">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_private" class="radio radio-sm  radio-primary"
-                                                     />
-                                                <span class="label-text text-base">Yes</span>
+                                <span class="block pb-4 text-base">Upload at least 5 photos of your property to increase your chances of getting bookings. The more photos you upload, the better! You can always add more later.</span>
+                                <div class="w-full relative border-2 border-gray-300 border-dashed rounded-md p-6" id="dropzone">
+                                    <input type="file" multiple class="absolute inset-0 w-full h-full opacity-0 z-50" />
+                                    <div class="text-center">
+                                        <img class="mx-auto h-12 w-12" src="https://www.svgrepo.com/show/357902/image-upload.svg" alt="">
+                                
+                                        <h3 class="mt-2 text-sm font-medium text-gray-900">
+                                            <label for="file-upload" class="relative cursor-pointer">
+                                                <span>Drag and drop</span>
+                                                <span class="text-indigo-600"> or browse</span>
+                                                <span>to upload</span>
+                                                <input id="file-upload" name="file-upload" multiple type="file" class="sr-only">
                                             </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_private" class="radio radio-sm  radio-primary"
-                                                     />
-                                                <span class="label-text text-base">No, it's shared</span>
-                                            </label>
-                                        </div>
-                                    
+                                        </h3>
+                                        <p class="mt-1 text-xs text-gray-500">
+                                            PNG, JPG up to 10MB
+                                        </p>
                                     </div>
-
                                 </div>
-                                <div class="mb-4 relative">
-                                    <label for="amenities"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">Which bathroom items are available in this room?
-                                    </label>
-                                    <div class="form-control">
-                                        <label class="label cursor-pointer justify-start gap-3 py-1">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
-                                            <span class="label-text text-base">Restaurant</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">Room service</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">Bar</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">24-hour front desk</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label py-1 cursor-pointer justify-start gap-3">
-                                            <input type="checkbox" checked="checked"
-                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                            <span class="label-text text-base">Spa and wellness centre</span>
-                                        </label>
-                                    </div>
-
-                                </div>
-
-
+                               <div class="pt-8">
+                                    <span class="block pb-4 text-[15px] font-semibold">
+                                        Your uploaded images will be displayed below :  
+                                    </span>
+                                   <div class="grid grid-cols-4 border p-3 rounded-md gap-3">
+                                      <div class="relative w-full h-[130px]">
+                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
+                                          <div class="absolute  top-2 right-2">
+                                            <i class="bi text-[19px]  cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                          </div>
+                                          <span class="absolute top-1 left-1 bg-blue-100 text-blue-800 text-xs font-medium  px-2 py-0.5 rounded-md">Main Photo</span>
+                                      </div>
+                                      <div class="relative w-full h-[130px]">
+                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
+                                          <div class="absolute  top-2 right-2">
+                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                          </div>
+                                      </div>
+                                      <div class="relative w-full h-[130px]">
+                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
+                                          <div class="absolute  top-2 right-2">
+                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                          </div>
+                                      </div>
+                                      <div class="relative w-full h-[130px]">
+                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
+                                          <div class="absolute  top-2 right-2">
+                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                          </div>
+                                      </div>
+                                      <div class="relative w-full h-[130px]">
+                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
+                                          <div class="absolute  top-2 right-2">
+                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                          </div>
+                                      </div>
+                                   </div>  
+                               </div>    
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
@@ -411,6 +399,8 @@
             </div>
         </div>
     </footer>
+
+  
 
     <script type="text/javascript" src="/assets/js/javascript.js"></script>
 </body>
