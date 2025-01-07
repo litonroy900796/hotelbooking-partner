@@ -4,30 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parking Hotel | hotel booking </title>
+    <title>Rules Hotel | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
+    <!-- bootstrap icon -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-     <!-- google font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <style>
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
         /* Custom Classes */
         .border-primary,
         .bg-primary {
-            background-color: #003B95;
+            background-color: #1D2384;
         }
-
+        .border-primary{
+            border-color: #1D2384;
+        }
         .text-primary {
-            color: #003B95;
+            color: #1D2384;
         }
     </style>
 </head>
@@ -261,133 +265,143 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
-
             <div class="flex justify-between">
-                <div class="w-9/12">
-                    <h1 class="text-2xl font-bold pb-2">What are the parking arrangements at your hotel?</h1>
-                    <p class="text-[17px]">Our hotel provides secure on-site parking with valet service and additional
-                        nearby options</p>
+                <div>
+                    <h1 class="text-2xl font-bold pb-2">What amenities are available for guests? </h1>
+                    <p class="text-[17px]">Guests can enjoy high-speed Wi-Fi, a fully equipped kitchen, cozy seating, and access to entertainment options.</p>
                 </div>
-                <div class="breadcrumbs flex-1 flex justify-end text-sm">
+                <div class="breadcrumbs text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>Hotel Parking</li>
+                        <li>Apartment amenities</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
-                    <div class="w-[50%] ">
-                        <form action="/property/hotel/house-rules.html">
+                    <div class="w-[60%] ">
+                        <form action="/property/apartment/apartment-service.html">
                             <div class="bg-white p-5 rounded-[4px]">
 
-                                <div class="mb-4 pb-3 relative  border-b">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2"> Can
-                                        guests park at the hotel?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_park"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Yes, free</span>
+                                <fieldset class="border border-gray-4300 rounded-[4px] mb-8 px-3 pt-2 pb-3">
+                                    <legend class="text-[16px] px-1 font-bold">General</legend>
+                                    <div class="relative">
+                                        <div class="form-control">
+                                            <label class="label cursor-pointer justify-start gap-3 py-1">
+                                                <input type="checkbox" class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                                <span class="label-text text-base">Air conditioning</span>
                                             </label>
                                         </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_park"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Yes, paid</span>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                      class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Heating</span>
                                             </label>
                                         </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_park"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">No</span>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Free Wifi</span>
                                             </label>
                                         </div>
-
-                                    </div>
-                                </div>
-
-
-                                <div class="mb-4 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        Where is the parking located?
-                                    </label>
-                                    <div class="flex justify-center">
-                                        <div class="w-full">
-                                            <div class="flex">
-                                                <label
-                                                    class="input h-auto py-[4px] input-bordered w-full leading-[38px] rounded-l-md rounded-r-none">
-                                                    BDT
-                                                    <input type="text" class="grow">
-                                                </label>
-                                                <select
-                                                    class="w-1/3 h-auto py-[4px] select select-bordered  rounded-r-md rounded-l-none"
-                                                    id="inputGroupSelect02">
-                                                    <option selected>Per Day</option>
-                                                    <option value="1">Per Hour</option>
-                                                    <option value="2">Per Stay</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Where is the parking located? -->
-
-                                <div class="mb-4 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        Where is the parking located?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="located"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">On site</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="located"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">
-                                                    Off site</span>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                     class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Electric vehicle charging station</span>
                                             </label>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- parking  type -->
-                                <div class="mb-4 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        What parking facilities are provided?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="perking_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Private</span>
+                                </fieldset>
+                                <fieldset class="border border-gray-4300 rounded-[4px] mb-8 px-3 pt-2 pb-3">
+                                    <legend class="text-[16px] px-1 font-bold">Cooking and cleaning</legend>
+                                    <div class="relative">
+                                        <div class="form-control">
+                                            <label class="label cursor-pointer justify-start gap-3 py-1">
+                                                <input type="checkbox" class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                                <span class="label-text text-base">Kitchen</span>
                                             </label>
                                         </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="perking_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">
-                                                    Public</span>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                      class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Kitchenette</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Washing machine</span>
                                             </label>
                                         </div>
                                     </div>
-                                </div>
+                                </fieldset>
+                                <fieldset class="border border-gray-4300 rounded-[4px] mb-8 px-3 pt-2 pb-3">
+                                    <legend class="text-[16px] px-1 font-bold">Entertainment</legend>
+                                    <div class="relative">
+                                        <div class="form-control">
+                                            <label class="label cursor-pointer justify-start gap-3 py-1">
+                                                <input type="checkbox" class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                                <span class="label-text text-base">Flat-screen TV</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                      class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Swimming pool</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Hot tub</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Minibar</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Sauna</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="border border-gray-4300 rounded-[4px]  px-3 pt-2 pb-3">
+                                    <legend class="text-[16px] px-1 font-bold">Outside and view</legend>
+                                    <div class="relative">
+                                        <div class="form-control">
+                                            <label class="label cursor-pointer justify-start gap-3 py-1">
+                                                <input type="checkbox" class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                                <span class="label-text text-base">Balcony</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                      class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Garden view</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Terrace</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">View</span>
+                                            </label>
+                                        </div>
+                                     
+                                    </div>
+                                </fieldset>
+
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
@@ -398,7 +412,7 @@
                         </form>
 
                     </div>
-                    <div class="w-[50%]">
+                    <div class="flex-1">
 
                     </div>
                 </div>
@@ -409,7 +423,6 @@
 
     </div>
     <!-- main section -->
-
 
     <!-- footer -->
     <footer class="bg-primary pt-14">
