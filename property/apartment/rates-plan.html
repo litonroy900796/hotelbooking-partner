@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartment Photo | hotel booking </title>
+    <title>About Room | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
@@ -27,6 +28,9 @@
         .border-primary,
         .bg-primary {
             background-color: #003B95;
+        }
+        .border-primary {
+            border-color: #003B95;
         }
 
         .text-primary {
@@ -267,79 +271,62 @@
            
             <div class="flex justify-between">
                 <div class="w-9/12">
-                    <h1 class="text-2xl font-bold pb-2">What does your place look like?</h1>
-                    <p class="text-[17px]">Discover our apartment unique charm with elegant rooms, modern amenities, and breathtaking views, designed to make your stay unforgettable</p>
+                    <h1 class="text-2xl font-bold pb-2">Rate plans</h1>
+                    <p class="text-[17px]">Discover flexible and affordable rate plans tailored to meet your needs.</p>
                 </div>
                 <div class="breadcrumbs flex-1 flex justify-end text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>Apartment Photo</li>
+                        <li>Rate plans</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
-                <div class="flex items-center gap-7">
-                    <div class="w-[55%] ">
-                        <form action="/property/apartment/apartment-price.html">
-                            <div class="bg-white p-5 rounded-[4px]">
-                                <span class="block pb-4 text-base">Upload at least 5 photos of your property to increase your chances of getting bookings. The more photos you upload, the better! You can always add more later.</span>
-                                <div class="w-full relative border-2 border-gray-300 border-dashed rounded-md p-6" id="dropzone">
-                                    <input type="file" multiple class="absolute inset-0 w-full h-full opacity-0 z-50" />
-                                    <div class="text-center">
-                                        <img class="mx-auto h-12 w-12" src="https://www.svgrepo.com/show/357902/image-upload.svg" alt="">
+               
+                    <div class="w-full">
+                            <h2 class="text-xl font-semibold mb-3">Standard rate plan</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                               
+                                    <!--rate plan design  -->
+                                    <div class="border bg-white border-gray-200 rounded-[4px] p-5">
+                                        <div class="flex justify-between items-center">
+                                            <h3 class="text-[17px] font-semibold">Cancellation policy</h3>
+                                            <div class="flex items-center gap-2">
+                                               <!-- edit button -->
+                                                 <button class="flex items-center gap-[6px] bg-primary text-white px-3 py-1 rounded-[4px]">
+                                                    <i class="bi bi-pencil text-[14px]"></i>
+                                                    <span class="text-[15px]">Edit</span>
+                                                 </button>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 mt-5">
+                                            <!-- list start -->
+                                            <div class="flex items-center gap-2">
+                                                <i class="bi bi-patch-check text-[19px]"></i>
+                                                <span class="text-[16px]">Free cancellation before 12:00 PM on 12/12/2025</span>
+                                             </div>
+                                                <!-- list end -->
+                                                <!-- list start -->
+                                                <div class="flex items-center gap-2">
+                                                    <i class="bi bi-patch-check text-[19px]"></i>
+                                                    <span class="text-[16px]">Guests who cancel within waived 24 hours will have their cancellation fee</span>
+                                                 </div>
+                                                    <!-- list end -->
+                                                     
+                                        </div>   
+                                     </div>    
+                                    <div class="border border-gray-300 rounded-[4px] p-5">
+                                        <div class="flex justify-between items-center">
+                                            <h3 class="text-[18px] font-semibold">Cancellation policy</h3>
+                                            <div class="flex items-center gap-2">
+                                                <i class="bi bi-pencil text-[18px]"></i>
+                                                <i class="bi bi-trash text-[18px]"></i>
+                                            </div>
+                                        </div>   
+                                     </div>    
+                               
                                 
-                                        <h3 class="mt-2 text-sm font-medium text-gray-900">
-                                            <label for="file-upload" class="relative cursor-pointer">
-                                                <span>Drag and drop</span>
-                                                <span class="text-indigo-600"> or browse</span>
-                                                <span>to upload</span>
-                                                <input id="file-upload" name="file-upload" multiple type="file" class="sr-only">
-                                            </label>
-                                        </h3>
-                                        <p class="mt-1 text-xs text-gray-500">
-                                            PNG, JPG up to 10MB
-                                        </p>
-                                    </div>
-                                </div>
-                               <div class="pt-8">
-                                    <span class="block pb-4 text-[15px] font-semibold">
-                                        Your uploaded images will be displayed below :  
-                                    </span>
-                                   <div class="grid grid-cols-4 border p-3 rounded-md gap-3">
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px]  cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                          <span class="absolute top-1 left-1 bg-blue-100 text-blue-800 text-xs font-medium  px-2 py-0.5 rounded-md">Main Photo</span>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                   </div>  
-                               </div>    
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
@@ -347,13 +334,11 @@
                                 <Button type="submit"
                                     class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
                             </div>
-                        </form>
+                   
 
                     </div>
-                    <div class="flex-1">
-
-                    </div>
-                </div>
+                  
+            
             </div>
 
         </div>
@@ -399,8 +384,6 @@
             </div>
         </div>
     </footer>
-
-  
 
     <script type="text/javascript" src="/assets/js/javascript.js"></script>
 </body>
