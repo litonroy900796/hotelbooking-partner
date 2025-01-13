@@ -4,31 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartment Service | hotel booking </title>
+    <title>Rules Hotel | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
+    <!-- bootstrap icon -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         /* Custom Classes */
         .border-primary,
         .bg-primary {
-            background-color: #003B95;
+            background-color: #1D2384;
         }
-
+        .border-primary{
+            border-color: #1D2384;
+        }
         .text-primary {
-            color: #003B95;
+            color: #1D2384;
         }
     </style>
 </head>
@@ -262,201 +265,59 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
-
             <div class="flex justify-between">
-                <div class="w-9/12">
-                    <h1 class="text-2xl font-bold pb-2">Services Offered at Our Property</h1>
-                    <p class="text-[17px]">We provide a range of services to make your stay enjoyable, including 24/7
-                        support, complimentary Wi-Fi, daily housekeeping, and more. Your comfort is our priority!</p>
+                <div>
+                    <h1 class="text-2xl font-bold pb-2">What languages are spoken by you or your team?</h1>
+                    <p class="text-[17px]">Our team speaks multiple languages to ensure effective communication and personalized support.</p>
                 </div>
-                <div class="breadcrumbs flex-1 flex justify-end text-sm">
+                <div class="breadcrumbs text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>Apartment Services</li>
+                        <li>Apartment Language</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
                     <div class="w-[60%] ">
-                        <form action="/property/apartment/apartment-laguage.html">
-                            <div class="bg-white p-5 mb-7 rounded-[4px]">
-                                <fieldset class="border border-gray-4300 rounded-[4px]  px-5 pt-4  pb-5">
-                                    <legend class="text-[18.5px]  font-bold">Breakfast</legend>
-                                    <div class="mb-4 relative">
-                                        <label for="property_name"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2">Do
-                                            you serve guests breakfast?
-                                        </label>
-
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="radio-10" class="radio radio-sm radio-primary"
-                                                    checked="checked" />
-                                                <span class="label-text text-base">Yes</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="radio-10" class="radio radio-sm radio-primary"
-                                                    checked="checked" />
-                                                <span class="label-text text-base">No</span>
-                                            </label>
-                                        </div>
+                        <form action="/property/apartment/apartment-house-rules.html">
+                            <div class="bg-white p-5 rounded-[4px]">
 
 
-                                    </div>
-
-                                    <!--! if you breakfast yes then open the field -->
-                                    <div class="mb-4 relative">
-                                        <label for="property_name"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2">Is
-                                            breakfast included in the price guests pay?
-                                        </label>
-
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="radio-10"
-                                                    class="radio radio-sm  radio-primary" checked="checked" />
-                                                <span class="label-text text-base">Yes, it's included</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="radio-10"
-                                                    class="radio radio-sm radio-primary " checked="checked" />
-                                                <span class="label-text text-base">
-                                                    No, it costs extra</span>
-                                            </label>
-                                        </div>
-
-
-                                    </div>
+                                <fieldset class="border border-gray-4300 rounded-[4px]  px-3 pt-2 pb-3">
+                                    <legend class="text-[16px] px-1 font-bold">Select languages</legend>
                                     <div class="relative">
-                                        <label for="property_name"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2">The
-                                            price for breakfast is charged on a per-person, per-day basis
-                                        </label>
-                                        <label class="input h-auto mt-3 py-2 input-bordered  flex items-center gap-2">
-                                            BDT
-                                            <input type="number" class="grow" />
-                                        </label>
-
-
+                                        <div class="form-control">
+                                            <label class="label cursor-pointer justify-start gap-3 py-1">
+                                                <input type="checkbox" class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                                <span class="label-text text-base">English</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                      class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">French</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Italian</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label py-1 cursor-pointer justify-start gap-3">
+                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
+                                                <span class="label-text text-base">Russian</span>
+                                            </label>
+                                        </div>
+                                     
                                     </div>
                                 </fieldset>
-                            </div>
-                            <div class="bg-white p-5 mb-4 rounded-[4px]">
-                                <fieldset class="border border-gray-4300 rounded-[4px]  px-5 pt-4  pb-5">
-                                    <legend class="text-[18.5px]  font-bold">Parking</legend>
-                                    <div class="mb-4 pb-3 relative  border-b">
-                                        <label for="parkIsNo"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2"> Can
-                                            guests park at the hotel?
-                                        </label>
-                                        <div class="flex items-start flex-col gap-0">
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="is_park"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">Yes, free</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="is_park"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">Yes, paid</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="is_park"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">No</span>
-                                                </label>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-    
-    
-                                    <div class="mb-4 relative">
-                                        <label for="parkIsNo"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2">
-                                            Where is the parking located?
-                                        </label>
-                                        <div class="flex justify-center">
-                                            <div class="w-full">
-                                                <div class="flex">
-                                                    <label
-                                                        class="input h-auto mt-3 py-2   flex items-center gap-2 input-bordered w-full  rounded-l-md rounded-r-none">
-                                                        BDT
-                                                        <input type="text" class="grow">
-                                                    </label>
-                                                    <select
-                                                        class="w-1/3  h-auto mt-3 py-2   flex items-center gap-2  select select-bordered  rounded-r-md rounded-l-none"
-                                                        id="inputGroupSelect02">
-                                                        <option selected>Per Day</option>
-                                                        <option value="1">Per Hour</option>
-                                                        <option value="2">Per Stay</option>
-    
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Where is the parking located? -->
-    
-                                    <div class="mb-4 relative">
-                                        <label for="parkIsNo"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2">
-                                            Where is the parking located?
-                                        </label>
-                                        <div class="flex items-start flex-col gap-0">
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="located"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">On site</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="located"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">
-                                                        Off site</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- parking  type -->
-                                    <div class="relative">
-                                        <label for="parkIsNo"
-                                            class="text-gray-800 font-semibold mb-2 text-[16px]  flex items-center gap-2">
-                                            What parking facilities are provided?
-                                        </label>
-                                        <div class="flex items-start flex-col gap-0">
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="perking_type"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">Private</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-control flex-row">
-                                                <label class="label cursor-pointer flex items-center gap-2">
-                                                    <input type="radio" name="perking_type"
-                                                        class="radio radio-sm radio-primary" />
-                                                    <span class="label-text text-base">
-                                                        Public</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                                <div class="pt-5">
+                                    <span class="font-semibold text-[15.4px] cursor-pointer">Add additional languages</span>
+                                </div>
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
@@ -478,7 +339,6 @@
 
     </div>
     <!-- main section -->
-
 
     <!-- footer -->
     <footer class="bg-primary pt-14">

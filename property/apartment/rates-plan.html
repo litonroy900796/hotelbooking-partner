@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,16 +18,18 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-      <!-- google font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         /* Custom Classes */
-        .border-primary,
+
         .bg-primary {
             background-color: #003B95;
         }
+
         .border-primary {
             border-color: #003B95;
         }
@@ -268,7 +269,6 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
-           
             <div class="flex justify-between">
                 <div class="w-9/12">
                     <h1 class="text-2xl font-bold pb-2">Rate plans</h1>
@@ -283,62 +283,84 @@
                 </div>
             </div>
             <div class="pt-10">
-               
-                    <div class="w-full">
-                            <h2 class="text-xl font-semibold mb-3">Standard rate plan</h2>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                               
-                                    <!--rate plan design  -->
-                                    <div class="border bg-white border-gray-200 rounded-[4px] p-5">
-                                        <div class="flex justify-between items-center">
-                                            <h3 class="text-[17px] font-semibold">Cancellation policy</h3>
-                                            <div class="flex items-center gap-2">
-                                               <!-- edit button -->
-                                                 <button class="flex items-center gap-[6px] bg-primary text-white px-3 py-1 rounded-[4px]">
-                                                    <i class="bi bi-pencil text-[14px]"></i>
-                                                    <span class="text-[15px]">Edit</span>
-                                                 </button>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-3 mt-5">
-                                            <!-- list start -->
-                                            <div class="flex items-center gap-2">
-                                                <i class="bi bi-patch-check text-[19px]"></i>
-                                                <span class="text-[16px]">Free cancellation before 12:00 PM on 12/12/2025</span>
-                                             </div>
-                                                <!-- list end -->
-                                                <!-- list start -->
-                                                <div class="flex items-center gap-2">
-                                                    <i class="bi bi-patch-check text-[19px]"></i>
-                                                    <span class="text-[16px]">Guests who cancel within waived 24 hours will have their cancellation fee</span>
-                                                 </div>
-                                                    <!-- list end -->
-                                                     
-                                        </div>   
-                                     </div>    
-                                    <div class="border border-gray-300 rounded-[4px] p-5">
-                                        <div class="flex justify-between items-center">
-                                            <h3 class="text-[18px] font-semibold">Cancellation policy</h3>
-                                            <div class="flex items-center gap-2">
-                                                <i class="bi bi-pencil text-[18px]"></i>
-                                                <i class="bi bi-trash text-[18px]"></i>
-                                            </div>
-                                        </div>   
-                                     </div>    
-                               
-                                
-                            </div>
-                            <div class="flex items-center mt-8 gap-3">
-                                <a href="/property/index.html"
-                                    class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>
-                                <Button type="submit"
-                                    class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
-                            </div>
-                   
 
+                <div class="w-full">
+                    <h2 class="text-xl font-semibold mb-3">Standard rate plan</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                        <!--rate plan design  -->
+                        <div class="border bg-white border-gray-200 rounded-[4px] p-5">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[17px] font-semibold">Cancellation policy</h3>
+                                <div class="flex items-center gap-2">
+                                    <!-- edit button -->
+                                    <button
+                                    onclick="edit_plan.showModal()"
+                                        class="flex items-center gap-[6px] border border-primary hover:bg-[#003B95] hover:text-white text-primary px-2 py-1 rounded-[4px]">
+                                        <i class="bi bi-pencil text-[13px]"></i>
+                                        <span class="text-[14px]">Edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 mt-5">
+                                <!-- list start -->
+                                <div class="flex items-center gap-2">
+                                    <i class="bi bi-patch-check text-[19px]"></i>
+                                    <span class="text-[16px]">Free cancellation before 12:00 PM on 12/12/2025</span>
+                                </div>
+                                <!-- list end -->
+                                <!-- list start -->
+                                <div class="flex items-center gap-2">
+                                    <i class="bi bi-patch-check text-[19px]"></i>
+                                    <span class="text-[16px]">Guests who cancel within waived 24 hours will have their
+                                        cancellation fee</span>
+                                </div>
+                                <!-- list end -->
+
+                            </div>
+                        </div>
+                        <!--end rate plan design  -->
+                        <!-- start rate plan design -->
+                        <div class="border bg-white border-gray-200 rounded-[4px] p-5">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-[17px] font-semibold">Per price group size</h3>
+                                <div class="flex items-center gap-2">
+                                    <!-- edit button -->
+                                    <button
+                                    onclick="edit_plan.showModal()"
+                                        class="flex items-center gap-[6px] border border-primary hover:bg-[#003B95] hover:text-white text-primary px-2 py-1 rounded-[4px]">
+                                        <i class="bi bi-pencil text-[13px]"></i>
+                                        <span class="text-[14px]">Edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2  mt-5">
+                                <div>
+                                    <h5 class="font-semibold text-[17px]">Occupancy</h5> 
+                                    <ul>
+                                        <li>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-[17px]">Guest Pay</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end rate plan design -->
                     </div>
-                  
-            
+                    <div class="flex items-center mt-8 gap-3">
+                        <a href="/property/index.html"
+                            class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>
+                        <Button type="submit"
+                            class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
+                    </div>
+
+
+                </div>
+
+
             </div>
 
         </div>
@@ -347,6 +369,30 @@
     </div>
     <!-- main section -->
 
+    <!-- edit modal -->
+    <dialog id="edit_plan" class="modal">
+        <div class="modal-box">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <h3 class="text-lg font-bold">Cancellation policy</h3>
+            <!-- edit policy list with input -->
+            <form class="flex flex-col gap-4 mt-5">
+                <!-- list start -->
+                <div class="relative">
+                    <input type="text" placeholder="" value="Free cancellation before 12:00 PM on 12/12/2025" class="input input-bordered !h-auto py-2 w-full " />                        
+                </div>
+                <!-- list start -->
+                <div class="relative">
+                    <input type="text" placeholder="" value="Guests who cancel within waived 24 hours will have their cancellation fee" class="input input-bordered !h-auto py-2 w-full " />                        
+                </div>
+                <div class="flex items-center justify-end gap-3">
+                    <button type="submit"
+                        class="py-[8px] text-[15px] px-8 border rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Save</button>
+                </div>       
+            </form>    
+        </div>
+      </dialog>
     <!-- footer -->
     <footer class="bg-primary pt-14">
         <div class="container mx-auto">
