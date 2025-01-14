@@ -314,10 +314,11 @@
                                 </div>
 
 
+                                
                                 <div class="mb-4 relative">
                                     <label for="parkIsNo"
                                         class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        Where is the parking located?
+                                        How much does parking cost?
                                     </label>
                                     <div class="flex justify-center">
                                         <div class="w-full">
@@ -339,6 +340,31 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- type reserve ? -->
+                                <div class="mb-4 relative">
+                                    <label for="parkIsNo"
+                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
+                                       Do they need to reserve a parking spot?
+                                    </label>
+                                    <div class="flex items-start flex-col gap-0">
+                                        <div class="form-control flex-row">
+                                            <label class="label cursor-pointer flex items-center gap-2">
+                                                <input type="radio" name="reservation_type" 
+                                                    class="radio radio-sm radio-primary" />
+                                                <span class="label-text text-base">Reservation needed</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-control flex-row">
+                                            <label class="label cursor-pointer flex items-center gap-2">
+                                                <input type="radio" name="reservation_type"
+                                                    class="radio radio-sm radio-primary" />
+                                                <span class="label-text text-base">
+                                                    No reservation needed</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!--end type reserve ? -->
                                 <!-- Where is the parking located? -->
 
                                 <div class="mb-4 relative">
@@ -365,7 +391,7 @@
                                     </div>
                                 </div>
                                 <!-- parking  type -->
-                                <div class="mb-4 relative">
+                                <div class=" relative">
                                     <label for="parkIsNo"
                                         class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
                                         What parking facilities are provided?

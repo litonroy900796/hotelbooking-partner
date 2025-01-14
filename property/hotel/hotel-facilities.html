@@ -4,34 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules Hotel | hotel booking </title>
+    <title>About Hotel | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- font awesome -->
-    <!-- bootstrap icon -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
     <style>
         /* Custom Classes */
         .border-primary,
         .bg-primary {
-            background-color: #1D2384;
+            background-color: #003B95;
         }
-        .border-primary{
-            border-color: #1D2384;
-        }
+
         .text-primary {
-            color: #1D2384;
+            color: #003B95;
         }
     </style>
 </head>
@@ -265,124 +264,104 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
+           
             <div class="flex justify-between">
-                <div>
-                    <h1 class="text-2xl font-bold pb-2">What languages are spoken by you or your team?</h1>
-                    <p class="text-[17px]">Our team speaks multiple languages to ensure effective communication and personalized support.</p>
+                <div class="w-9/12">
+                    <h1 class="text-2xl font-bold pb-2">What
+                        amenities are available for guests at your hotel?</h1>
+                    <p class="text-[17px]">Our hotel provides complimentary Wi-Fi, a fitness center, an outdoor pool, and more to ensure a comfortable stay for all guests.</p>
                 </div>
-                <div class="breadcrumbs text-sm">
+                <div class="breadcrumbs flex-1 flex justify-end text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>Apartment Language</li>
+                        <li>Facilities</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
-                    <div class="w-[60%] ">
-                        <form action="/property/apartment/apartment-house-rules.html">
+                    <div class="w-[50%] ">
+                        <form action="/property/hotel/hotel-breakfast.html">
                             <div class="bg-white p-5 rounded-[4px]">
-
-
-                                <fieldset class="border border-gray-4300 rounded-[4px]  px-3 pt-2 pb-3">
-                                    <legend class="text-[16px] px-1 font-bold">Select languages</legend>
-                                    <div class="relative">
-                                        <div class="form-control">
-                                            <label class="label cursor-pointer justify-start gap-3 py-1">
-                                                <input type="checkbox" class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
-                                                <span class="label-text text-base">English</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control">
-                                            <label class="label py-1 cursor-pointer justify-start gap-3">
-                                                <input type="checkbox"                      class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                                <span class="label-text text-base">French</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control">
-                                            <label class="label py-1 cursor-pointer justify-start gap-3">
-                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                                <span class="label-text text-base">Italian</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control">
-                                            <label class="label py-1 cursor-pointer justify-start gap-3">
-                                                <input type="checkbox"                         class="checkbox checkbox-sm rounded-[4px] checkbox-primary" />
-                                                <span class="label-text text-base">Russian</span>
-                                            </label>
-                                        </div>
-                                     
+                                <div class=" relative">
+                                    <!-- <label for="amenities"
+                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">What
+                                        amenities are available for guests at your hotel?
+                                    </label> -->
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Restaurant</span>
+                                        </label>
                                     </div>
-                                </fieldset>
-                                <div class="pt-5">
-                                    <span
-                                      id="addLanguagesToggle"
-                                      class="font-semibold text-[15.4px] cursor-pointer"
-                                    >
-                                      Add additional languages
-                                    </span>
-                                  
-                                    <!-- Dropdown Wrapper -->
-                                    <div
-                                      id="addLanguagesBlock"
-                                      class="relative inline-block w-full pt-3 hidden"
-                                    >
-                                      <!-- Dropdown Button -->
-                                      <div
-                                        id="dropdownButton"
-                                        class="w-full px-4 py-2 text-gray-700 bg-white border rounded cursor-pointer shadow-sm"
-                                      >
-                                        Select Options
-                                      </div>
-                                  
-                                      <!-- Dropdown Content -->
-                                      <div
-                                        id="dropdownMenu"
-                                        class="absolute left-0 z-10 hidden w-full mt-2 bg-white border rounded shadow-lg"
-                                      >
-                                        <!-- Search Bar -->
-                                        <div class="p-2">
-                                          <input
-                                            id="searchInput"
-                                            type="text"
-                                            placeholder="Search..."
-                                            class="w-full px-2 py-1 border rounded focus:outline-none focus:ring focus:ring-blue-200"
-                                          />
-                                        </div>
-                                  
-                                        <!-- Options -->
-                                        <ul
-                                          id="dropdownOptions"
-                                          class="max-h-40 overflow-y-auto grid grid-cols-1"
-                                        >
-                                          <!-- Example Option -->
-                                          <label
-                                            for="english"
-                                            class="px-4 py-2 cursor-pointer hover:bg-blue-100"
-                                          >
-                                            <input type="checkbox" id="english" class="mr-2" value="english" />
-                                            English
-                                          </label>
-                                          <label
-                                            for="french"
-                                            class="px-4 py-2 cursor-pointer hover:bg-blue-100"
-                                          >
-                                            <input type="checkbox" id="french" class="mr-2" value="french" />
-                                            French
-                                          </label>
-                                          <label
-                                            for="italian"
-                                            class="px-4 py-2 cursor-pointer hover:bg-blue-100"
-                                          >
-                                            <input type="checkbox" id="italian" class="mr-2" value="italian" />
-                                            Italian
-                                          </label>
-                                        </ul>
-                                      </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Bar</span>
+                                        </label>
                                     </div>
-                                  </div>
-                                  
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text
+                                                text-base">Swimming Pool</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Fitness Center</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Spa</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Free Parking</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Airport Shuttle</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Family Rooms</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Non-Smoking Rooms</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer justify-start gap-3 py-1">
+                                            <input type="checkbox"
+                                                class="checkbox checkbox-sm rounded-[4px] checkbox-primary checked:bg-[#003B95]" />
+                                            <span class="label-text text-base">Room Service</span>
+                                        </label>
+                                    </div>                                                               
+ 
+                                </div> 
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
@@ -393,7 +372,7 @@
                         </form>
 
                     </div>
-                    <div class="flex-1">
+                    <div class="w-[50%]">
 
                     </div>
                 </div>

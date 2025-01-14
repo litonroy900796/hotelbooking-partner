@@ -138,3 +138,56 @@ input[type="number"] {
     display: block;
   }
 
+  .multi-select-dropdown {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .dropdown-header {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dropdown-body {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .filter-input {
+    width: calc(100% - 16px);
+    margin: 8px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .options-container {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .option-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .option-item:hover {
+    background-color: #f0f0f0;
+  }

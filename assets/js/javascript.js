@@ -44,3 +44,53 @@ function togglePasswordVisibility(inputId, iconId) {
     icon.classList.add("fa-eye");
   }
 }
+
+// ========= language dropdown =========
+    const addLanguagesToggle = document.getElementById("addLanguagesToggle");
+    const addLanguagesBlock = document.getElementById("addLanguagesBlock");
+
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const searchInput = document.getElementById("searchInput");
+    const dropdownOptions = document.getElementById("dropdownOptions");
+    const checkboxes = dropdownOptions.querySelectorAll("input[type='checkbox']");
+
+    addLanguagesToggle.addEventListener("click", () => {
+      addLanguagesBlock.classList.toggle("hidden");
+    });
+    // Toggle dropdown visibility
+    dropdownButton.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("hidden");
+    });
+
+    // Close dropdown if clicking outside
+    document.addEventListener("click", (e) => {
+      if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+
+    // Filter options
+    searchInput.addEventListener("input", (e) => {
+      const searchValue = e.target.value.toLowerCase();
+      const options = dropdownOptions.querySelectorAll("label");
+      options.forEach((option) => {
+        const text = option.textContent.toLowerCase();
+        option.style.display = text.includes(searchValue) ? "block" : "none";
+      });
+    });
+
+    // Update button text with selected options
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        const selectedOptions = Array.from(checkboxes)
+          .filter((checkbox) => checkbox.checked)
+          .map((checkbox) => checkbox.value);
+        dropdownButton.textContent = selectedOptions.length
+          ? selectedOptions.join(", ")
+          : "Select Options";
+      });
+    });
+ 
+
+    //=============== search suggestion =============================
