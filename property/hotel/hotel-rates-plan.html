@@ -284,81 +284,183 @@
             </div>
             <div class="pt-10">
 
-                <div class="w-full">
+                <form action="/property/hotel/overview-room.html" class="w-full">
                     <h2 class="text-xl font-semibold mb-3">Standard rate plan</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
                         <!--rate plan design  -->
-                        <div class="border bg-white border-gray-200 rounded-[4px] p-5">
-                            <div class="flex justify-between items-center">
-                                <h3 class="text-[17px] font-semibold">Cancellation policy</h3>
-                                <div class="flex items-center gap-2">
-                                    <!-- edit button -->
-                                    <button
-                                    onclick="edit_plan.showModal()"
-                                        class="flex items-center gap-[6px] border border-primary hover:bg-[#003B95] hover:text-white text-primary px-2 py-1 rounded-[4px]">
-                                        <i class="bi bi-pencil text-[13px]"></i>
-                                        <span class="text-[14px]">Edit</span>
-                                    </button>
-                                </div>
+                        <div class="border  bg-white border-gray-200 rounded-[4px]">
+                            <div class="flex justify-between items-center border-b px-5 py-3">
+                                <h3 class="text-[18px] font-semibold">Price per group size</h3>
                             </div>
-                            <div class="flex flex-col gap-3 mt-5">
-                                <!-- list start -->
-                                <div class="flex items-center gap-2">
-                                    <i class="bi bi-patch-check text-[19px]"></i>
-                                    <span class="text-[16px]">Free cancellation before 12:00 PM on 12/12/2025</span>
+
+                            <div class="px-5 py-3">
+                                <p class="text-base">The suggested discounts are determined using data from properties
+                                    similar to yours and may be updated at any time</p>
+                                <div class="form-control w-fit mt-2">
+                                    <label class="label cursor-pointer">
+                                        <input type="checkbox" class="toggle toggle-primary" checked="checked" />
+                                        <span class="label-text ml-2 font-semibold">Enabled</span>
+                                    </label>
                                 </div>
-                                <!-- list end -->
-                                <!-- list start -->
-                                <div class="flex items-center gap-2">
-                                    <i class="bi bi-patch-check text-[19px]"></i>
-                                    <span class="text-[16px]">Guests who cancel within waived 24 hours will have their
-                                        cancellation fee</span>
-                                </div>
-                                <!-- list end -->
 
                             </div>
+                            <div class="border-t pb-6 pt-3">
+                                <!-- price input field -->
+                                <table class="w-full">
+                                    <thead class="">
+                                        <tr>
+                                            <th class="text-left text-[15px] font-semibold pl-5 border-b pb-3">Occupancy
+                                            </th>
+                                            <th class="text-center text-[15px] font-semibold border-b pb-3">Discount
+                                            </th>
+                                            <th class="text-right text-[15px] font-semibold pr-5 border-b pb-3">Guest
+                                                Pay</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="pl-5 py-1 border-b">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="bi bi-person-bounding-box text-[18px]"></i>
+
+                                                    </i>
+                                                    <i class="bi bi-x-lg text-[15px]"></i>
+                                                    <span class="text-[15px] font-semibold">1</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center py-1 border-b">
+                                                <div
+                                                    class="w-[100px] mx-auto flex  relative border border-gray-300 rounded-md p-1">
+                                                    <!-- input field with % symbol -->
+                                                    <input type="number"
+                                                        class="border-none outline-none w-full px-1 appearance-none"
+                                                        value="0">
+                                                    <span
+                                                        class="bg-gray-200 rounded-md border border-gray-300 shadow-sm px-2 h-full">%</span>
+
+                                                </div>
+                                            </td>
+                                            <td class="text-right pr-5 py-1 border-b">
+                                                <span>BDT 2500.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pl-5 py-1 border-b">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="bi bi-person-bounding-box text-[18px]"></i>
+
+                                                    </i>
+                                                    <i class="bi bi-x-lg text-[15px]"></i>
+                                                    <span class="text-[15px] font-semibold">2</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center py-1 border-b">
+                                                <div
+                                                    class="w-[100px] mx-auto flex  relative border border-gray-300 rounded-md p-1">
+                                                    <!-- input field with % symbol -->
+                                                    <input type="number"
+                                                        class="border-none outline-none w-full px-1 appearance-none"
+                                                        value="10">
+                                                    <span
+                                                        class="bg-gray-200 rounded-md border border-gray-300 shadow-sm px-2 h-full">%</span>
+
+                                                </div>
+                                            </td>
+                                            <td class="text-right pr-5 py-1 border-b">
+                                                <span>BDT 3000.00</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
                         <!--end rate plan design  -->
-                        <!-- start rate plan design -->
-                        <div class="border bg-white border-gray-200 rounded-[4px] p-5">
-                            <div class="flex justify-between items-center">
-                                <h3 class="text-[17px] font-semibold">Per price group size</h3>
-                                <div class="flex items-center gap-2">
-                                    <!-- edit button -->
-                                    <button
-                                    onclick="edit_plan.showModal()"
-                                        class="flex items-center gap-[6px] border border-primary hover:bg-[#003B95] hover:text-white text-primary px-2 py-1 rounded-[4px]">
-                                        <i class="bi bi-pencil text-[13px]"></i>
-                                        <span class="text-[14px]">Edit</span>
-                                    </button>
-                                </div>
+                        <!-- Cancellation policies -->
+                        <div class="border bg-white border-gray-200 rounded-[4px]">
+                            <div class="flex justify-between items-center border-b px-5 py-3">
+                                <h3 class="text-[18px] font-semibold">Cancellation policies</h3>
+                              
                             </div>
-                            <div class="grid grid-cols-2  mt-5">
-                                <div>
-                                    <h5 class="font-semibold text-[17px]">Occupancy</h5> 
-                                    <ul>
-                                        <li>
-                                            
-                                        </li>
-                                    </ul>
+                            <div class="px-5 pb-5  mt-3">
+                                <div class="relative">
+                                   <label for="" class="text-gray-800 font-semibold mb-2 text-[16px] block">When can the guests cancel their bookings for free?</label> 
+                                   <select class="select select-bordered !min-h-max !h-auto !py-[6px]  w-full ">
+                                    <option disabled selected>Please select...</option>
+                                    <option value="18h">until 18:00 on the day of arrival</option>
+                                    <option value="14h">until 14:00 on the day of arrival</option>
+                                    <option value="1d">until 1 day before arrival</option>
+                                    <option value="2d">until 2 days before arrival</option>
+                                    <option value="3d">until 3 days before arrival</option>
+                                    <option value="5d">until 5 days before arrival</option>
+                                    <option value="7d">until 7 days before arrival</option>
+                                    <option value="14d">until 14 days before arrival</option>
+                                    <option value="21d">until 21 days before arrival</option>
+                                    <option value="28d">until 28 days before arrival</option>
+                                    <option value="30d">until 30 days before arrival</option>
+                                    <option value="42d">until 42 days before arrival</option>
+                                    <option value="60d">until 60 days before arrival</option>
+                                  </select>  
                                 </div>
-                                <div>
-                                    <h5 class="font-semibold text-[17px]">Guest Pay</h5>
+                                <!-- radio and label -->
+                                <div class="relative pt-5 pb-3">
+                                    <!--! How much is the guest charged for cancellation  => dynamic text -->
+                                    <span class="text-gray-800 font-semibold mb-2 text-[16px] block ">How much is the guest charged for cancellation in the 2 days before arrival?
+                                        
+                                    </span>
+
+                                    <div class="form-control flex-row">
+                                        <label class="label !py-1 cursor-pointer flex items-center gap-2">
+                                            <input type="radio" name="is_policy" class="radio radio-sm radio-primary" >
+                                            <span class="label-text text-base">Cost of the first night</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control flex-row">
+                                        <label class="label !py-1 cursor-pointer flex items-center gap-2">
+                                            <input type="radio" name="is_policy" class="radio radio-sm radio-primary">
+                                            <span class="label-text text-base">50% of the total price</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control flex-row">
+                                        <label class="label !py-1 cursor-pointer flex items-center gap-2">
+                                            <input type="radio" name="is_policy" class="radio radio-sm radio-primary">
+                                            <span class="label-text text-base">100% of the total price</span>
+                                        </label>
+                                    </div>
+
+
                                 </div>
+                                <!--  guest charged -->
+                                <div class="relative">
+                                    <label for="" class="text-gray-800 font-semibold mb-2 text-[16px] block">
+                                        How much is the guest charged for a no show?
+                                    </label> 
+                                    <select class="select select-bordered !min-h-max !h-auto !py-[6px] w-full ">
+                                     <option  selected>Same as the cancellation fee</option>
+                                    
+                                     <option value="">                                       100% of the total price
+                                      </option>
+                                     
+                                   </select>  
+                                 </div>
                             </div>
                         </div>
                         <!-- end rate plan design -->
                     </div>
-                    <div class="flex items-center mt-8 gap-3">
-                        <a href="/property/index.html"
-                            class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>
-                        <Button type="submit"
-                            class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="flex items-center mt-8 gap-3">
+                            <a href="/property/index.html"
+                                class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>
+                            <Button type="submit"
+                                class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
+                        </div>
+                        <div></div>
                     </div>
+                 
 
 
-                </div>
+                </form>
 
 
             </div>
@@ -372,27 +474,30 @@
     <!-- edit modal -->
     <dialog id="edit_plan" class="modal">
         <div class="modal-box">
-          <form method="dialog">
-            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-          </form>
-          <h3 class="text-lg font-bold">Cancellation policy</h3>
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="text-lg font-bold">Cancellation policy</h3>
             <!-- edit policy list with input -->
             <form class="flex flex-col gap-4 mt-5">
                 <!-- list start -->
                 <div class="relative">
-                    <input type="text" placeholder="" value="Free cancellation before 12:00 PM on 12/12/2025" class="input input-bordered !h-auto py-2 w-full " />                        
+                    <input type="text" placeholder="" value="Free cancellation before 12:00 PM on 12/12/2025"
+                        class="input input-bordered !h-auto py-2 w-full " />
                 </div>
                 <!-- list start -->
                 <div class="relative">
-                    <input type="text" placeholder="" value="Guests who cancel within waived 24 hours will have their cancellation fee" class="input input-bordered !h-auto py-2 w-full " />                        
+                    <input type="text" placeholder=""
+                        value="Guests who cancel within waived 24 hours will have their cancellation fee"
+                        class="input input-bordered !h-auto py-2 w-full " />
                 </div>
                 <div class="flex items-center justify-end gap-3">
                     <button type="submit"
                         class="py-[8px] text-[15px] px-8 border rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Save</button>
-                </div>       
-            </form>    
+                </div>
+            </form>
         </div>
-      </dialog>
+    </dialog>
     <!-- footer -->
     <footer class="bg-primary pt-14">
         <div class="container mx-auto">

@@ -191,3 +191,14 @@ input[type="number"] {
   .option-item:hover {
     background-color: #f0f0f0;
   }
+  /* For Chrome, Safari, Edge, and other WebKit browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

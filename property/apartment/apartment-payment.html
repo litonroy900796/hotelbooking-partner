@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parking Hotel | hotel booking </title>
+    <title>Apartment Payment | hotel booking </title>
     <!-- flowbite design  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
@@ -15,15 +15,23 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-     <!-- google font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <style>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
         /* Custom Classes */
-        .border-primary,
+
         .bg-primary {
             background-color: #003B95;
+        }
+
+        .border-primary {
+            border-color: #003B95;
         }
 
         .text-primary {
@@ -261,159 +269,90 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
-
             <div class="flex justify-between">
                 <div class="w-9/12">
-                    <h1 class="text-2xl font-bold pb-2">What are the parking arrangements at your hotel?</h1>
-                    <p class="text-[17px]">Our hotel provides secure on-site parking with valet service and additional
-                        nearby options</p>
+                    <h1 class="text-2xl font-bold">Payments & Bookings</h1>
+
                 </div>
                 <div class="breadcrumbs flex-1 flex justify-end text-sm">
                     <ul>
                         <li><a href="/" class="flex items-center gap-1"><i class="bi bi-house"></i> Home</a></li>
                         <li>Property</li>
-                        <li>Hotel Parking</li>
+                        <li>Payments & Bookings</li>
                     </ul>
                 </div>
             </div>
             <div class="pt-10">
                 <div class="flex items-center gap-7">
-                    <div class="w-[50%] ">
-                        <form action="/property/hotel/hotel-laguage.html">
+                    <div class="w-[60%] ">
+                        <form action="/property/apartment/apartment-price.html">
                             <div class="bg-white p-5 rounded-[4px]">
-
-                                <div class="mb-4 pb-3 relative  border-b">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2"> Can
-                                        guests park at the hotel?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
+                                <div class="relative">
+                                    <label class="text-gray-800 font-semibold mb-2 text-[17px] block">How
+                                        can your guests pay for their stay?</label>
+                                    <div class="flex flex-col">
                                         <div class="form-control flex-row">
                                             <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_park"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Yes, free</span>
+                                                <input type="radio" name="is_payment"
+                                                    class="radio radio-sm  radio-primary" />
+                                                <span class="label-text  text-base">Pay at property</span>
                                             </label>
                                         </div>
                                         <div class="form-control flex-row">
                                             <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_park"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Yes, paid</span>
+                                                <input type="radio" name="is_payment"
+                                                    class="radio radio-sm  radio-primary" />
+                                                <span class="label-text text-base">Pay online</span>
                                             </label>
                                         </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="is_park"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">No</span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                                
-                                <div class="mb-4 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        How much does parking cost?
-                                    </label>
-                                    <div class="flex justify-center">
-                                        <div class="w-full">
-                                            <div class="flex">
-                                                <label
-                                                    class="input h-auto py-[4px] input-bordered w-full leading-[38px] rounded-l-md rounded-r-none">
-                                                    BDT
-                                                    <input type="text" class="grow">
+                                        <div class="pl-6">
+                                            <div class="form-control flex-row">
+                                                <label class="label cursor-pointer flex items-center gap-2">
+                                                    <input type="radio" name="is_payment"
+                                                        class="radio radio-sm  radio-primary" />
+                                                    <span class="label-text text-base">Book with 50% payment</span>
                                                 </label>
-                                                <select
-                                                    class="w-1/3 h-auto py-[4px] select select-bordered  rounded-r-md rounded-l-none"
-                                                    id="inputGroupSelect02">
-                                                    <option selected>Per Day</option>
-                                                    <option value="1">Per Hour</option>
-                                                    <option value="2">Per Stay</option>
-
-                                                </select>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- type reserve ? -->
-                                <div class="mb-4 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                       Do they need to reserve a parking spot?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="reservation_type" 
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Reservation needed</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="reservation_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">
-                                                    No reservation needed</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <!--end type reserve ? -->
-                                <!-- Where is the parking located? -->
+                                            <div class="form-control flex-row">
+                                                <label class="label cursor-pointer flex items-center gap-2">
+                                                    <input type="radio" name="is_payment"
+                                                        class="radio radio-sm  radio-primary" />
+                                                    <span class="label-text text-base">Book with 100% payment</span>
+                                                </label>
+                                            </div>
 
-                                <div class="mb-4 relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        Where is the parking located?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                           
+                            <div class="bg-white mt-5 p-5 rounded-[4px]">
+                                <div class="relative">
+                                    <label for="rating " class="text-gray-800 font-semibold mb-2 text-[17px] block">How can guests book your property?</label>
+                                    <div class="flex flex-col">
                                         <div class="form-control flex-row">
                                             <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="located"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">On site</span>
+                                                <input type="radio" name="is_booking"
+                                                    class="radio radio-sm  radio-primary" checked />
+                                                <span class="label-text  text-base">Guests can book instantly </span>
                                             </label>
                                         </div>
                                         <div class="form-control flex-row">
                                             <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="located"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">
-                                                    Off site</span>
+                                                <input type="radio" name="is_booking"
+                                                    class="radio radio-sm  radio-primary" />
+                                                <span class="label-text text-base">Guests will need to request to book</span>
                                             </label>
                                         </div>
                                     </div>
+
                                 </div>
-                                <!-- parking  type -->
-                                <div class=" relative">
-                                    <label for="parkIsNo"
-                                        class="text-gray-700 font-medium mb-2 text-[17px]  flex items-center gap-2">
-                                        What parking facilities are provided?
-                                    </label>
-                                    <div class="flex items-start flex-col gap-0">
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="perking_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">Private</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-control flex-row">
-                                            <label class="label cursor-pointer flex items-center gap-2">
-                                                <input type="radio" name="perking_type"
-                                                    class="radio radio-sm radio-primary" />
-                                                <span class="label-text text-base">
-                                                    Public</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
+
                             </div>
                             <div class="flex items-center mt-8 gap-3">
                                 <a href="/property/index.html"
@@ -424,7 +363,7 @@
                         </form>
 
                     </div>
-                    <div class="w-[50%]">
+                    <div class="flex-1">
 
                     </div>
                 </div>
@@ -435,7 +374,6 @@
 
     </div>
     <!-- main section -->
-
 
     <!-- footer -->
     <footer class="bg-primary pt-14">

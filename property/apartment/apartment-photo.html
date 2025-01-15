@@ -18,10 +18,11 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-      <!-- google font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         /* Custom Classes */
         .border-primary,
@@ -264,11 +265,12 @@
     <!-- main section -->
     <div class="py-10 page">
         <div class="container">
-           
+
             <div class="flex justify-between">
                 <div class="w-9/12">
                     <h1 class="text-2xl font-bold pb-2">What does your place look like?</h1>
-                    <p class="text-[17px]">Discover our apartment unique charm with elegant rooms, modern amenities, and breathtaking views, designed to make your stay unforgettable</p>
+                    <p class="text-[17px]">Discover our apartment unique charm with elegant rooms, modern amenities, and
+                        breathtaking views, designed to make your stay unforgettable</p>
                 </div>
                 <div class="breadcrumbs flex-1 flex justify-end text-sm">
                     <ul>
@@ -279,22 +281,28 @@
                 </div>
             </div>
             <div class="pt-10">
-                <div class="flex items-center gap-7">
-                    <div class="w-[55%] ">
-                        <form action="/property/apartment/apartment-price.html">
+                <form action="/property/apartment/apartment-payment.html">
+                    <div class="grid grid-cols-2 gap-7">
+                        <div class="w-full">
                             <div class="bg-white p-5 rounded-[4px]">
-                                <span class="block pb-4 text-base">Upload at least 5 photos of your property to increase your chances of getting bookings. The more photos you upload, the better! You can always add more later.</span>
-                                <div class="w-full relative border-2 border-gray-300 border-dashed rounded-md p-6" id="dropzone">
+                                <h2 class="text-xl font-semibold pb-4">Gallery Images</h2>
+                                <span class="block pb-4 text-base">Upload at least 5 photos of your property to increase
+                                    your chances of getting bookings. The more photos you upload, the better! You can
+                                    always add more later.</span>
+                                <div class="w-full relative border-2 border-gray-300 border-dashed rounded-md p-6"
+                                    id="dropzone">
                                     <input type="file" multiple class="absolute inset-0 w-full h-full opacity-0 z-50" />
                                     <div class="text-center">
-                                        <img class="mx-auto h-12 w-12" src="https://www.svgrepo.com/show/357902/image-upload.svg" alt="">
-                                
+                                        <img class="mx-auto h-12 w-12"
+                                            src="https://www.svgrepo.com/show/357902/image-upload.svg" alt="">
+
                                         <h3 class="mt-2 text-sm font-medium text-gray-900">
                                             <label for="file-upload" class="relative cursor-pointer">
                                                 <span>Drag and drop</span>
                                                 <span class="text-indigo-600"> or browse</span>
                                                 <span>to upload</span>
-                                                <input id="file-upload" name="file-upload" multiple type="file" class="sr-only">
+                                                <input id="file-upload" name="file-upload" multiple type="file"
+                                                    class="sr-only">
                                             </label>
                                         </h3>
                                         <p class="mt-1 text-xs text-gray-500">
@@ -302,62 +310,127 @@
                                         </p>
                                     </div>
                                 </div>
-                               <div class="pt-8">
+                                <div class="pt-8">
                                     <span class="block pb-4 text-[15px] font-semibold">
-                                        Your uploaded images will be displayed below :  
+                                        Your uploaded images will be displayed below :
                                     </span>
-                                   <div class="grid grid-cols-4 border p-3 rounded-md gap-3">
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px]  cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                          <span class="absolute top-1 left-1 bg-blue-100 text-blue-800 text-xs font-medium  px-2 py-0.5 rounded-md">Main Photo</span>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                      <div class="relative w-full h-[130px]">
-                                          <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg" class="w-full h-full rounded-md" alt="">
-                                          <div class="absolute  top-2 right-2">
-                                            <i class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
-                                          </div>
-                                      </div>
-                                   </div>  
-                               </div>    
+                                    <div class="grid grid-cols-4 border p-3 rounded-md gap-3">
+                                        <div class="relative w-full h-[130px]">
+                                            <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg"
+                                                class="w-full h-full rounded-md" alt="">
+                                            <div class="absolute  top-2 right-2">
+                                                <i
+                                                    class="bi text-[19px]  cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                            </div>
+                                            <span
+                                                class="absolute top-1 left-1 bg-blue-100 text-blue-800 text-xs font-medium  px-2 py-0.5 rounded-md">Main
+                                                Photo</span>
+                                        </div>
+                                        <div class="relative w-full h-[130px]">
+                                            <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg"
+                                                class="w-full h-full rounded-md" alt="">
+                                            <div class="absolute  top-2 right-2">
+                                                <i
+                                                    class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="relative w-full h-[130px]">
+                                            <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg"
+                                                class="w-full h-full rounded-md" alt="">
+                                            <div class="absolute  top-2 right-2">
+                                                <i
+                                                    class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="relative w-full h-[130px]">
+                                            <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg"
+                                                class="w-full h-full rounded-md" alt="">
+                                            <div class="absolute  top-2 right-2">
+                                                <i
+                                                    class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="relative w-full h-[130px]">
+                                            <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg"
+                                                class="w-full h-full rounded-md" alt="">
+                                            <div class="absolute  top-2 right-2">
+                                                <i
+                                                    class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="flex items-center mt-8 gap-3">
-                                <a href="/property/index.html"
-                                    class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>
-                                <Button type="submit"
-                                    class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
+                        </div>
+                        <div class="w-full">
+
+                            <div class="">
+                                <div class="bg-white p-5 rounded-[4px]">
+                                    <!-- feature image -->
+                                    <div class=" border-b">
+                                        <h2 class="text-xl font-semibold pb-4">Feature Image</h2>
+                                        <span class="block pb-4 text-base">Upload a main photo of your property to make
+                                            it stand out. This photo will be displayed on the search results
+                                            page.</span>
+                                        <div class="grid grid-cols-1 gap-3">
+                                            <label
+                                                class="flex flex-col rounded-lg border-2 border-dashed p-10 group text-center">
+                                                <div
+                                                    class="h-full w-full text-center flex flex-col  justify-center items-center  ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="w-10 h-10 text-blue-400 group-hover:text-blue-600"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                                    </svg>
+                                                    <!-- <div class="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
+                                                    <img class="has-mask h-36 object-center" src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg" alt="freepik image">
+                                                    </div> -->
+                                                    <p class="pointer-none text-gray-500 "><span class="text-sm">Drag
+                                                            and drop</span> files here <br /> or <a href="" id=""
+                                                            class="text-blue-600 hover:underline">select a file</a> from
+                                                        your computer</p>
+                                                </div>
+                                                <input type="file" class="hidden">
+                                            </label>
+                                        </div>
+                                        <!-- display this image -->
+                                        <div class="relative  w-[25%] h-[130px] mt-3">
+                                            <img src="https://i.postimg.cc/QdWLk60S/pexels-pixabay-258154-2.jpg"
+                                                class="w-full h-full rounded-md" alt="">
+                                            <div class="absolute  top-2 right-2">
+                                                <i
+                                                    class="bi text-[19px] cursor-pointer text-white hover:text-red-500 bi-x-circle"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- gallery image -->
+
+                                </div>
+
                             </div>
-                        </form>
+
+
+                        </div>
 
                     </div>
-                    <div class="flex-1">
-
+                    <div class="grid grid-cols-2">
+                        <div class="flex items-center mt-8 gap-3">
+                            <a href="/property/index.html"
+                                class="px-5 py-[10px] text-[15px]  bg-white border border-gray-400 rounded-[4px]">Back</a>
+                            <Button type="submit"
+                                class="w-full py-[10px] text-[15px]  border  rounded-[4px] bg-primary border-primary hover:bg-white hover:text-primary text-white">Continue</Button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
 
         </div>
-    </div>
+
 
     </div>
     <!-- main section -->
@@ -400,7 +473,7 @@
         </div>
     </footer>
 
-  
+
 
     <script type="text/javascript" src="/assets/js/javascript.js"></script>
 </body>
